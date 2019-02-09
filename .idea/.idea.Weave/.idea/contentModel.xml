@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\sammaher\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\sammaher\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Weave.744863920.00" t="ExcludeRecursive" />
+    <e p="D:\Files\Unity\Weave" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Data" t="Include">
+            <e p="Card" t="Include">
+              <e p="Action" t="Include">
+                <e p="Action.cs" t="Include" />
+                <e p="Damage.cs" t="Include" />
+                <e p="Heal.cs" t="Include" />
+              </e>
+              <e p="Attribute" t="Include">
+                <e p="Attribute.cs" t="Include" />
+              </e>
+              <e p="Card.cs" t="Include" />
+              <e p="Condition" t="Include">
+                <e p="Condition.cs" t="Include" />
+                <e p="Target.cs" t="Include" />
+              </e>
+              <e p="Modifier" t="Include">
+                <e p="Increment.cs" t="Include" />
+                <e p="Modifier.cs" t="Include" />
+                <e p="Threshold.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Character" t="Include">
+              <e p="Character.cs" t="Include" />
+            </e>
+            <e p="Enums" t="Include">
+              <e p="EventName.cs" t="Include" />
+              <e p="TargetType.cs" t="Include" />
+              <e p="Zone.cs" t="Include" />
+            </e>
+            <e p="Event" t="Include">
+              <e p="EventData" t="Include">
+                <e p="CardMoved.cs" t="Include" />
+                <e p="EventData.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Factory.cs" t="Include" />
+            <e p="IProduct.cs" t="Include" />
+          </e>
+          <e p="Game" t="Include">
+            <e p="ActionManager.cs" t="Include" />
+            <e p="EventManager.cs" t="Include" />
+            <e p="Test.cs" t="Include" />
+            <e p="TurnManager.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="Weave.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
