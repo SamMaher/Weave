@@ -9,6 +9,6 @@ public class CardMoved : EventData {
 
     public override string ToString()
     {
-        return string.Format("Card: {0}, Moved from {1} to: {2} ", card.name, from, to);
+        return string.Format($"Card: {card.name}, Moved from {from} to {to} ");
     }
 }

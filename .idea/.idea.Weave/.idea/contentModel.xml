@@ -16,40 +16,40 @@
               </e>
               <e p="Attribute" t="Include">
                 <e p="Attribute.cs" t="Include" />
+                <e p="Modifier" t="Include">
+                  <e p="Increment.cs" t="Include" />
+                  <e p="Modifier.cs" t="Include" />
+                  <e p="Threshold.cs" t="Include" />
+                </e>
               </e>
               <e p="Card.cs" t="Include" />
               <e p="Condition" t="Include">
                 <e p="Condition.cs" t="Include" />
                 <e p="Target.cs" t="Include" />
+                <e p="TargetType.cs" t="Include" />
               </e>
-              <e p="Modifier" t="Include">
-                <e p="Increment.cs" t="Include" />
-                <e p="Modifier.cs" t="Include" />
-                <e p="Threshold.cs" t="Include" />
-              </e>
+              <e p="Zone.cs" t="Include" />
             </e>
             <e p="Character" t="Include">
               <e p="Character.cs" t="Include" />
-            </e>
-            <e p="Enums" t="Include">
-              <e p="EventName.cs" t="Include" />
-              <e p="TargetType.cs" t="Include" />
-              <e p="Zone.cs" t="Include" />
             </e>
             <e p="Event" t="Include">
               <e p="EventData" t="Include">
                 <e p="CardMoved.cs" t="Include" />
                 <e p="EventData.cs" t="Include" />
               </e>
+              <e p="EventName.cs" t="Include" />
             </e>
             <e p="Factory.cs" t="Include" />
             <e p="IProduct.cs" t="Include" />
           </e>
           <e p="Game" t="Include">
-            <e p="ActionManager.cs" t="Include" />
-            <e p="EventManager.cs" t="Include" />
+            <e p="Combat" t="Include">
+              <e p="ActionManager.cs" t="Include" />
+              <e p="CombatStateManager.cs" t="Include" />
+              <e p="EventManager.cs" t="Include" />
+            </e>
             <e p="Test.cs" t="Include" />
-            <e p="TurnManager.cs" t="Include" />
           </e>
         </e>
       </e>
