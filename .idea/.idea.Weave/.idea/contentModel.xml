@@ -44,10 +44,16 @@
             <e p="IProduct.cs" t="Include" />
           </e>
           <e p="Game" t="Include">
-            <e p="Combat" t="Include">
+            <e p="Match" t="Include">
               <e p="ActionManager.cs" t="Include" />
-              <e p="CombatStateManager.cs" t="Include" />
+              <e p="Command.cs" t="Include" />
               <e p="EventManager.cs" t="Include" />
+              <e p="MatchState" t="Include">
+                <e p="MatchState.cs" t="Include" />
+              </e>
+              <e p="MatchStateManager.cs" t="Include" />
+              <e p="Process.cs" t="Include" />
+              <e p="Transition.cs" t="Include" />
             </e>
             <e p="Test.cs" t="Include" />
           </e>
