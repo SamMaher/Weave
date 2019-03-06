@@ -1,12 +1,14 @@
-﻿/// <summary>
+﻿using System;
+
+/// <summary>
 ///     Card data model
 /// </summary>
 public class Card : IProduct {
-    
-    public string id { get; set; }
-    public string name { get; set; }
-    public string text { get; set; }
-    public Condition[] conditions { get; set; }
-    public Action[] actions { get; set; }
-    public Zone zone { get; set; }
+    // TODO : Rarity
+    public string Id { get; set; }
+    public string Name { get; set; }
+    public string Text { get; set; }
+    public Condition[] Conditions { get; set; }
+    public Action[] Actions { get; set; }
+    public Zone Zone { get; set; }
 }

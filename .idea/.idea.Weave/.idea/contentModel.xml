@@ -28,10 +28,13 @@
                 <e p="Target.cs" t="Include" />
                 <e p="TargetType.cs" t="Include" />
               </e>
+              <e p="Deck.cs" t="Include" />
               <e p="Zone.cs" t="Include" />
             </e>
             <e p="Character" t="Include">
               <e p="Character.cs" t="Include" />
+              <e p="Enemy.cs" t="Include" />
+              <e p="Player.cs" t="Include" />
             </e>
             <e p="Event" t="Include">
               <e p="EventData" t="Include">
@@ -40,22 +43,36 @@
               </e>
               <e p="EventName.cs" t="Include" />
             </e>
-            <e p="Factory.cs" t="Include" />
-            <e p="IProduct.cs" t="Include" />
+            <e p="State" t="Include">
+              <e p="Match" t="Include">
+                <e p="EnemyTurn.cs" t="Include" />
+                <e p="MatchTurn.cs" t="Include" />
+                <e p="PlayerTurn.cs" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="Game" t="Include">
-            <e p="Match" t="Include">
-              <e p="ActionManager.cs" t="Include" />
-              <e p="Command.cs" t="Include" />
-              <e p="EventManager.cs" t="Include" />
-              <e p="MatchState" t="Include">
-                <e p="MatchState.cs" t="Include" />
-              </e>
-              <e p="MatchStateManager.cs" t="Include" />
-              <e p="Process.cs" t="Include" />
-              <e p="Transition.cs" t="Include" />
-            </e>
+            <e p="CardsManager.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="GameStateManager.cs" t="Include" />
             <e p="Test.cs" t="Include" />
+          </e>
+          <e p="Match" t="Include">
+            <e p="CharacterManager.cs" t="Include" />
+            <e p="DeckManager.cs" t="Include" />
+            <e p="EventManager.cs" t="Include" />
+            <e p="MatchManager.cs" t="Include" />
+            <e p="MatchStateManager.cs" t="Include" />
+          </e>
+          <e p="system" t="Include">
+            <e p="Factory" t="Include">
+              <e p="Factory.cs" t="Include" />
+              <e p="IProduct.cs" t="Include" />
+            </e>
+            <e p="State" t="Include">
+              <e p="IState.cs" t="Include" />
+              <e p="StateManager.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>

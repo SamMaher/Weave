@@ -7,6 +7,5 @@ public class Damage : Action {
 
     public override void Invoke()
     {
-        
     }
 }

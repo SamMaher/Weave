@@ -1,10 +1,16 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
+using UnityEngine.Experimental.AI;
 
 public class Test : MonoBehaviour {
-    private void Start()
+    private void Awake()
     {
-        var cards = new Factory<Card>("cards").Load();
+        var game = GameManager.Game;
 
-        foreach (var card in cards) Debug.Log(card.name);
+        var deck = GameManager.Game.Cards.Decks.First().Value;
+
+        GameManager.Game.Match.Deck.Open(deck);
+
+        var cards = GameManager.Game.Match.Deck.Cards;
     }
 }

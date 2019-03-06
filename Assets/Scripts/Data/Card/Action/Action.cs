@@ -1,4 +1,6 @@
-﻿/// <summary>
+﻿using System;
+
+/// <summary>
 ///     Effect when played
 /// </summary>
 public abstract class Action {

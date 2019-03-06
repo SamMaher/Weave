@@ -1,6 +1,7 @@
 ﻿/// <summary>
-///     Modifies an attribute if a value is within a range
+///     Modifies an attribute if a Value is within a range
 /// </summary>
 public class Threshold : Modifier {
-    public string propertyName;
+    public int minimum { get; set; }
+    public int maximum { get; set; }
 }
