@@ -1,0 +1,32 @@
+[
+    {
+        "id": "DA01",
+        "name": "Red Deck",
+        "cardList": 
+            {
+                "CA01": 8,
+                "CA02": 8,
+                "CA03": 8
+            }
+    },
+    {
+        "id": "DA02",
+        "name": "Blue Deck",
+        "cardList": 
+            {
+                "CA01": 8,
+                "CA02": 8,
+                "CA03": 8
+            }
+    },
+    {
+        "id": "DA03",
+        "name": "Green Deck",
+        "cardList": 
+            {
+                "CA01": 8,
+                "CA02": 8,
+                "CA03": 8
+            }
+    }
+]

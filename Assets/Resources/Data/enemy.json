@@ -1,0 +1,23 @@
+[
+    {
+        "id": "EA01",
+        "name": "Wolf",
+        "maxHealth": 2,
+        "health": 2,
+        "armour": 0
+    },
+    {
+        "id": "EA02",
+        "name": "Dire Wolf",
+        "maxHealth": 4,
+        "health": 4,
+        "armour": 0
+    },
+    {
+        "id": "EA03",
+        "name": "Alpha Wolf",
+        "maxHealth": 6,
+        "health": 6,
+        "armour": 3
+    }
+]

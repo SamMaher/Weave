@@ -15,6 +15,6 @@ public class CardMoved : EventData {
 
     public override string ToString()
     {
-        return $"Card {card.Name}, Moved from {from} to {to}";
+        return $"Card {card.name}, Moved from {from} to {to}";
     }
 }
