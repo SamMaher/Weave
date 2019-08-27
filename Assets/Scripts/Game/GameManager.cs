@@ -7,12 +7,12 @@ public class GameManager {
 
     public static GameManager Game => _Game ?? (_Game = new GameManager());
 
-    public CardsManager Cards { get; set; }
+    public CardsProvider Cards { get; set; }
     public MatchManager Match { get; set; }
 
     private GameManager()
     {
-        Cards = new CardsManager();
+        Cards = new CardsProvider();
         Match = new MatchManager();
     }
 }

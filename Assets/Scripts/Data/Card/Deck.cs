@@ -4,7 +4,8 @@
 /// 	Represents a Deck
 /// </summary>
 public class Deck : IProduct {
-    public string id;
-    public string name;
-    public Dictionary<string, int> cardList;
+    
+    public string Id { get; set; }
+    public string Name { get; set; }
+    public Dictionary<string, int> CardList { get; set; }
 }

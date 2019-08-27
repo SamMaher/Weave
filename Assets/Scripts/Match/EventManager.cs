@@ -6,31 +6,30 @@ using Handler = System.Action<object, EventData>;
 ///     Manages all events for a Match
 /// </summary>
 public static class EventManager {
-    private static readonly Dictionary<EventName, Handler> events = new Dictionary<EventName, Handler>();
+    
+    private static readonly Dictionary<EventName, Handler> Events = new Dictionary<EventName, Handler>();
 
     public static void StartListening(EventName eventName, Handler sender)
     {
-        if (!events.ContainsKey(eventName))
+        if (!Events.ContainsKey(eventName))
         {
-            events.Add(eventName, sender);
+            Events.Add(eventName, sender);
         }
         else
         {
-            events[eventName] += sender;
+            Events[eventName] += sender;
         }
     }
 
     public static void StopListening(EventName eventName, Handler sender)
     {
-        events[eventName] -= sender;
+        Events[eventName] -= sender;
     }
 
     public static void Notify(EventName eventName, EventData eventData)
     {
-        if (events.ContainsKey(eventName))
-        {
-            events[eventName](null, eventData);
-            if (eventData != null) Debug.Log($"EVENT: {eventName} - {eventData}");
-        }
+        if (!Events.ContainsKey(eventName)) return;
+        Events[eventName](null, eventData);
+        Debug.Log($"EVENT: {eventName} - {eventData}"); // TODO : Build a logging system that stores event info
     }
 }

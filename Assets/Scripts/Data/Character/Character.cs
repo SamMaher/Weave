@@ -4,9 +4,11 @@ using UnityEngine;
 /// <summary>
 /// 	Character data model
 /// </summary>
-public class Character {
-    
-    public int maxHealth;
-    public int health;
-    public int armour;
+public abstract class Character : IProduct {
+
+    public int MaxHealth { get; set; }
+    public int Health { get; set; }
+    public int Armour { get; set; }
+
+    public abstract string GetIdentifier();
 }

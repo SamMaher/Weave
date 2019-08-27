@@ -5,6 +5,7 @@ using System.Linq;
 /// 	Manages deckList in Match
 /// </summary>
 public class DeckManager {
+    
     public const int MaxHandSize = 7;
     public const int BaseHandSize = 5;
     public Deck Deck { get; set; }
@@ -15,7 +16,7 @@ public class DeckManager {
     private Card[] GetCollection(Zone zone = Zone.None)
     {
         if (zone == Zone.None) return Cards.ToArray();
-        return Cards.Where(card => card.zone == zone).ToArray();
+        return Cards.Where(card => card.Zone == zone).ToArray();
     }
 
     public Card[] GetDeck() => GetCollection(Zone.Deck);
@@ -31,12 +32,16 @@ public class DeckManager {
     public void Open(Deck deck)
     {
         Deck = deck;
-        Cards = GameManager.Game.Cards.CreateCards(deck).ToList();
+        Cards = GameManager.Game.Cards.CreateCardsFromDeck(deck).ToList();
+        foreach (var card in Cards)
+        {
+            card.Zone = Zone.Deck;
+        }
     }
 
     public CardMoved AddCard(Card card, Zone zone = Zone.None)
     {
-        card.zone = (zone == Zone.None) ? Zone.Deck : zone;
+        card.Zone = (zone == Zone.None) ? Zone.Deck : zone;
         Cards.Add(card);
 
         return new CardMoved(card, Zone.None, zone);
@@ -44,14 +49,15 @@ public class DeckManager {
 
     public CardMoved MoveCard(Card card, Zone zone)
     {
-        Zone from = card.zone;
-        Zone to = card.zone = zone;
+        Zone from = card.Zone;
+        Zone to = card.Zone = zone;
+        
         return new CardMoved(card, from, to);
     }
 
     public CardMoved DrawCard(Card card = null)
     {
-        if (card == null || card.zone == Zone.Deck)
+        if (card == null || card.Zone == Zone.Deck)
         {
             if (GetDeck().Length < 1) Recycle();
             card = GetDeck()[0];

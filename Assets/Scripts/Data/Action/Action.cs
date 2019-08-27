@@ -4,5 +4,6 @@
 ///     Effect when played
 /// </summary>
 public abstract class Action {
-    public abstract void Invoke();
+    
+    public abstract void Invoke(ActionInfo actionInfo);
 }

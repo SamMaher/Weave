@@ -3,21 +3,123 @@
         "id": "EA01",
         "name": "Wolf",
         "maxHealth": 2,
-        "health": 2,
-        "armour": 0
+        "health": 3,
+        "armour": 0,
+        "moves": [
+            {
+                "$type": "EnemyMove",
+                "conditions": [
+                    {
+                        "$type": "Target",
+                        "targetType": "Enemy"
+                    }
+                ],
+                "action": {
+                    "$type": "Damage",
+                    "damage": {
+                        "$type": "Attribute",
+                        "name": "damage",
+                        "value": 2,
+                        "modifiers": []
+                    }
+                }
+            }
+        ]
     },
     {
         "id": "EA02",
         "name": "Dire Wolf",
         "maxHealth": 4,
-        "health": 4,
-        "armour": 0
+        "health": 6,
+        "armour": 0,
+        "moves": [
+            {
+                "$type": "EnemyMove",
+                "conditions": [
+                    {
+                        "$type": "Target",
+                        "minimumTargets": 1,
+                        "targetType": "Ally"
+                    },
+                    {
+                        "$type": "HealthLost",
+                        "healthLost": 1
+                    },
+                    {
+                        "$type": "MinimumTargets",
+                        "targetCount": 2
+                    }
+                ],
+                "action": {
+                    "$type": "Defend",
+                    "armour": {
+                        "$type": "Attribute",
+                        "name": "defend",
+                        "value": 1,
+                        "modifiers": []
+                    }
+                }
+            },
+            {
+                "$type": "EnemyMove",
+                "conditions": [
+                    {
+                        "$type": "Target",
+                        "targetType": "Enemy"
+                    }
+                ],
+                "action": {
+                    "$type": "Damage",
+                    "damage": {
+                        "$type": "Attribute",
+                        "name": "damage",
+                        "value": 3,
+                        "modifiers": []
+                    }
+                }
+            }
+        ]
     },
     {
         "id": "EA03",
         "name": "Alpha Wolf",
         "maxHealth": 6,
         "health": 6,
-        "armour": 3
+        "armour": 4,
+        "moves": [
+            {
+                "$type": "EnemyMove",
+                "conditions": [
+                    {
+                        "$type": "AllyCount",
+                        "allyId": "EA01",
+                        "minAllies": "0"
+                    }
+                ],
+                "action": {
+                    "$type": "Summon",
+                    "characterId": "EA01",
+                    "characterCount": 2
+                }
+            },
+            {
+                "$type": "EnemyMove",
+                "conditions": [
+                    {
+                        "$type": "Target",
+                        "targetType": "Enemy"
+                    }
+                ],
+                "action": {
+                    "$type": "Damage",
+                    "damage": {
+                        "$type": "Attribute",
+                        "name": "damage",
+                        "value": 3,
+                        "modifiers": []
+                    }
+                }
+            }
+        ]
     }
 ]

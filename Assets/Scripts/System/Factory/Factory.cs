@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using UnityEngine;
 
 /// <summary>
-///     Generates objects from JSON input
+///     Generates objects From JSON input
 /// </summary>
 public class Factory<T> where T : IProduct {
     private readonly JsonSerializerSettings Settings;

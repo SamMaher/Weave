@@ -1,11 +1,16 @@
 ﻿/// <summary>
-/// 	Player character
+/// 	Player Character
 /// </summary>
 public class Player : Character {
     public Player()
     {
-        maxHealth = 6;
-        health = maxHealth;
-        armour = 3;
+        MaxHealth = 6;
+        Health = MaxHealth;
+        Armour = 3;
+    }
+
+    public override string GetIdentifier()
+    {
+        return "Player";
     }
 }

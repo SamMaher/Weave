@@ -1,24 +1,33 @@
 ﻿using System;
+using System.Collections;
+using UnityEngine;
 
 /// <summary>
 /// 	Handles States
 /// </summary>
-public class StateManager {
-    public Type[] states;
-    public IState current;
+public abstract class StateManager {
+    
+    protected Type[] States { get; set; }
+    public IState Current { get; set; }
 
-    public void Run()
+    public IEnumerator Start()
     {
-        if (!current.Run()) return;
-        var nextState = current.Exit();
-        current = nextState;
-        current.Enter();
+        Current.StartRunning();
+        while (true)
+        {
+            while (Current.IsRunning()) yield return null;
+            Next();
+        }
     }
 
-    public void Next(IState newState = null)
+    protected StateChanged Next(IState newState = null)
     {
-        var exitState = current.Exit();
-        current = newState ?? exitState;
-        current.Enter();
+        var fromStateName = Current.GetType().ToString();
+        var exitState = Current.Exit();
+        Current = newState ?? exitState;
+        var toStateName = Current.GetType().ToString();
+        Current.StartRunning();
+
+        return new StateChanged(fromStateName, toStateName);
     }
 }

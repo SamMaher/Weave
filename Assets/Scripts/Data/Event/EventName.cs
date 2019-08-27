@@ -2,8 +2,8 @@
 ///     Names of events
 /// </summary>
 public enum EventName {
-    MatchBegin = 0,
-    EndTurn,
+    MatchBegin,
+    TurnEnded,
     Idle,
     Reaper,
     CharacterDied,

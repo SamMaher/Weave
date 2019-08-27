@@ -12,7 +12,7 @@
         "actions": [
             {
                 "$type": "Damage",
-                "damage": {
+                "attribute": {
                     "$type": "Attribute",
                     "name": "damage",
                     "value": 1,
@@ -34,15 +34,17 @@
         "actions": [
             {
                 "$type": "Damage",
-                "damage": {
+                "attribute": {
                     "$type": "Attribute",
                     "name": "damage",
                     "value": 1,
-                    "modifiers": [{
-                        "$type": "Increment",
-                        "eventName": "CardDrawn",
-                        "value": 1
-                    }]
+                    "modifiers": [
+                        {
+                            "$type": "Increment",
+                            "eventName": "CardDrawn",
+                            "value": 1
+                        }
+                    ]
                 }
             }
         ]
@@ -50,7 +52,7 @@
     {
         "id": "CA03",
         "name": "Breathe",
-        "text": "Heal {heal}. +2 heal if you are below 5 health.",
+        "text": "Heal {heal}. +2 heal if you have less than 5 health.",
         "conditions": [ 
             {
                 "$type": "Target",
@@ -61,14 +63,61 @@
         "actions": [
             {
                 "$type": "Heal",
-                "heal": {
+                "attribute": {
                     "$type": "Attribute",
                     "name": "heal",
                     "value": 2,
-                    "modifiers": [{
-                        "$type": "Threshold",
-                        "maximum": 5
-                    }]
+                    "modifiers": [
+                        {
+                            "$type": "Threshold",
+                            "attributeName": "PlayerHealth",
+                            "below": 6,
+                            "value": 2
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": "CA04",
+        "name": "Calm",
+        "text": "Draw {draw} cards.",
+        "conditions": [],
+        "actions": [
+            {
+                "$type": "Draw",
+                "attribute": {
+                    "$type": "Attribute",
+                    "name": "draw",
+                    "value": 2,
+                    "modifiers": []
+                }
+            }
+        ]
+    },
+    {
+        "id": "CA05",
+        "name": "Meditate",
+        "text": "Heal {heal} health. Draw {draw} card.",
+        "conditions": [],
+        "actions": [
+            {
+                "$type": "Heal",
+                "attribute": {
+                    "$type": "Attribute",
+                    "name": "heal",
+                    "value": 2,
+                    "modifiers": []
+                }
+            },
+            {
+                "$type": "Draw",
+                "attribute": {
+                    "$type": "Attribute",
+                    "name": "draw",
+                    "value": 1,
+                    "modifiers": []
                 }
             }
         ]

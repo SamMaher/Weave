@@ -8,14 +8,23 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Data" t="Include">
-            <e p="Card" t="Include">
-              <e p="Action" t="Include">
-                <e p="Action.cs" t="Include" />
-                <e p="Damage.cs" t="Include" />
-                <e p="Heal.cs" t="Include" />
+            <e p="Action" t="Include">
+              <e p="Action.cs" t="Include" />
+              <e p="ActionInfo.cs" t="Include" />
+              <e p="Damage.cs" t="Include" />
+              <e p="Draw.cs" t="Include" />
+              <e p="EnemyAction" t="Include">
+                <e p="EnemyMove.cs" t="Include" />
+                <e p="MoveInfo.cs" t="Include" />
               </e>
+              <e p="Heal.cs" t="Include" />
+              <e p="Summon.cs" t="Include" />
+            </e>
+            <e p="Card" t="Include">
               <e p="Attribute" t="Include">
                 <e p="Attribute.cs" t="Include" />
+                <e p="IAttribute.cs" t="Include" />
+                <e p="MatchAttribute.cs" t="Include" />
                 <e p="Modifier" t="Include">
                   <e p="Increment.cs" t="Include" />
                   <e p="Modifier.cs" t="Include" />
@@ -24,11 +33,15 @@
               </e>
               <e p="Card.cs" t="Include" />
               <e p="Condition" t="Include">
+                <e p="AllyCount.cs" t="Include" />
                 <e p="Condition.cs" t="Include" />
+                <e p="HealthLost.cs" t="Include" />
+                <e p="MinimumTargets.cs" t="Include" />
                 <e p="Target.cs" t="Include" />
                 <e p="TargetType.cs" t="Include" />
               </e>
               <e p="Deck.cs" t="Include" />
+              <e p="Rarity.cs" t="Include" />
               <e p="Zone.cs" t="Include" />
             </e>
             <e p="Character" t="Include">
@@ -39,35 +52,43 @@
             <e p="Event" t="Include">
               <e p="EventData" t="Include">
                 <e p="CardMoved.cs" t="Include" />
+                <e p="CharacterDamaged.cs" t="Include" />
+                <e p="CharacterHealed.cs" t="Include" />
                 <e p="EventData.cs" t="Include" />
+                <e p="StateChanged.cs" t="Include" />
+                <e p="TurnChanged.cs" t="Include" />
               </e>
               <e p="EventName.cs" t="Include" />
-            </e>
-            <e p="State" t="Include">
-              <e p="Match" t="Include">
-                <e p="EnemyTurn.cs" t="Include" />
-                <e p="MatchTurn.cs" t="Include" />
-                <e p="PlayerTurn.cs" t="Include" />
-              </e>
+              <e p="IEventListener.cs" t="Include" />
             </e>
           </e>
           <e p="Game" t="Include">
-            <e p="CardsManager.cs" t="Include" />
+            <e p="CardsProvider.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="GameStateManager.cs" t="Include" />
-            <e p="Test.cs" t="Include" />
           </e>
           <e p="Match" t="Include">
+            <e p="AttributeProvider.cs" t="Include" />
             <e p="CharacterManager.cs" t="Include" />
             <e p="DeckManager.cs" t="Include" />
             <e p="EventManager.cs" t="Include" />
             <e p="MatchManager.cs" t="Include" />
             <e p="MatchStateManager.cs" t="Include" />
+            <e p="Turn" t="Include">
+              <e p="EnemyTurn.cs" t="Include" />
+              <e p="MatchTurn.cs" t="Include" />
+              <e p="PlayerTurn.cs" t="Include" />
+            </e>
           </e>
           <e p="system" t="Include">
             <e p="Factory" t="Include">
               <e p="Factory.cs" t="Include" />
               <e p="IProduct.cs" t="Include" />
+            </e>
+            <e p="Helper" t="Include">
+              <e p="ListHelper.cs" t="Include" />
+              <e p="UiHelper.cs" t="Include" />
             </e>
             <e p="State" t="Include">
               <e p="IState.cs" t="Include" />

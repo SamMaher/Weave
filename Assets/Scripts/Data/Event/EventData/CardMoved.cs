@@ -1,20 +1,21 @@
 ﻿/// <summary>
-///     Describes the moving of a card, includes drawing, discarding etc.
+///     Describes the moving of a Card, includes drawing, discarding etc.
 /// </summary>
 public class CardMoved : EventData {
-    public Card card { get; set; }
-    public Zone from { get; set; }
-    public Zone to { get; set; }
+    
+    public Card Card { get; set; }
+    public Zone From { get; set; }
+    public Zone To { get; set; }
 
     public CardMoved(Card card, Zone from, Zone to)
     {
-        this.card = card;
-        this.from = from;
-        this.to = to;
+        Card = card;
+        From = from;
+        To = to;
     }
 
     public override string ToString()
     {
-        return $"Card {card.name}, Moved from {from} to {to}";
+        return $"Card {Card.Name}, Moved From {From} To {To}";
     }
 }

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 /// <summary>
 /// 	Defines a Match state
 /// </summary>
 public interface IState {
-    void Enter();
+    
+    void StartRunning();
 
-    bool Run();
+    bool IsRunning();
 
     IState Exit();
 }
