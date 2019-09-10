@@ -1,7 +1,7 @@
 ﻿using System;
 
 /// <summary>
-/// 	Handles Game States, loading, paused etc.
+/// 	Handles ManagerController States, loading, paused etc.
 /// </summary>
 public class GameStateManager : StateManager {
 //    public IState current = new MatchTurn();

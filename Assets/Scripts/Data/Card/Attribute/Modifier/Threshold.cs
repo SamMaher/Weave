@@ -9,7 +9,7 @@ public class Threshold : Modifier { // TODO : How should we incorporate 'Count' 
     
     public override int CalculateModifier(int value)
     {
-        var attributeValue = GameManager.Game.Match.Attributes.Value(AttributeName);
+        var attributeValue = MatchController.Controller.AttributeManager.Value(AttributeName);
         if ((Above == null || attributeValue > Above) 
             && (Below == null || attributeValue < Below))
         {

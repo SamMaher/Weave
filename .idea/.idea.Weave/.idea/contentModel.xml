@@ -55,6 +55,8 @@
                 <e p="CharacterDamaged.cs" t="Include" />
                 <e p="CharacterHealed.cs" t="Include" />
                 <e p="EventData.cs" t="Include" />
+                <e p="HandDrawn.cs" t="Include" />
+                <e p="NewMatch.cs" t="Include" />
                 <e p="StateChanged.cs" t="Include" />
                 <e p="TurnChanged.cs" t="Include" />
               </e>
@@ -63,32 +65,68 @@
             </e>
           </e>
           <e p="Game" t="Include">
-            <e p="CardsProvider.cs" t="Include" />
+            <e p="Game.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
-            <e p="GameManager.cs" t="Include" />
             <e p="GameStateManager.cs" t="Include" />
-          </e>
-          <e p="Match" t="Include">
-            <e p="AttributeProvider.cs" t="Include" />
-            <e p="CharacterManager.cs" t="Include" />
-            <e p="DeckManager.cs" t="Include" />
-            <e p="EventManager.cs" t="Include" />
-            <e p="MatchManager.cs" t="Include" />
-            <e p="MatchStateManager.cs" t="Include" />
-            <e p="Turn" t="Include">
-              <e p="EnemyTurn.cs" t="Include" />
-              <e p="MatchTurn.cs" t="Include" />
-              <e p="PlayerTurn.cs" t="Include" />
+            <e p="Match" t="Include">
+              <e p="Animation" t="Include">
+                <e p="AttackAnimation.cs" t="Include" />
+                <e p="DrawCardAnimation.cs" t="Include" />
+              </e>
+              <e p="AttributeManager.cs" t="Include" />
+              <e p="CharacterManager.cs" t="Include" />
+              <e p="HandManager.cs" t="Include" />
+              <e p="MatchController.cs" t="Include" />
+              <e p="MatchStateManager.cs" t="Include" />
+              <e p="Turn" t="Include">
+                <e p="AttributeManagerException.cs" t="Include" />
+                <e p="EnemyTurn.cs" t="Include" />
+                <e p="MatchStart.cs" t="Include" />
+                <e p="MatchTurn.cs" t="Include" />
+                <e p="PlayerTurn.cs" t="Include" />
+              </e>
+            </e>
+            <e p="PlayerManager.cs" t="Include" />
+            <e p="Provider" t="Include">
+              <e p="CardsProvider.cs" t="Include" />
+              <e p="DeckProvider.cs" t="Include" />
+              <e p="EnemyProvider.cs" t="Include" />
             </e>
           </e>
           <e p="system" t="Include">
+            <e p="Animation" t="Include">
+              <e p="AnimationChannel.cs" t="Include" />
+              <e p="AnimationChannelName.cs" t="Include" />
+              <e p="AnimationManager.cs" t="Include" />
+              <e p="IQueueableAnimation.cs" t="Include" />
+              <e p="SpriteAnimation.cs" t="Include" />
+              <e p="TimedViewAnimation.cs" t="Include" />
+              <e p="ViewAnimation.cs" t="Include" />
+            </e>
+            <e p="Controller" t="Include">
+              <e p="ControllerException.cs" t="Include" />
+              <e p="ManagerController.cs" t="Include" />
+            </e>
+            <e p="Entity" t="Include">
+              <e p="Entity.cs" t="Include" />
+              <e p="IdentityType.cs" t="Include" />
+              <e p="IdentityTypeException.cs" t="Include" />
+            </e>
             <e p="Factory" t="Include">
-              <e p="Factory.cs" t="Include" />
-              <e p="IProduct.cs" t="Include" />
+              <e p="JsonFactory.cs" t="Include" />
+            </e>
+            <e p="Handler" t="Include">
+              <e p="CoroutineHandler.cs" t="Include" />
+              <e p="EventHandler.cs" t="Include" />
             </e>
             <e p="Helper" t="Include">
               <e p="ListHelper.cs" t="Include" />
               <e p="UiHelper.cs" t="Include" />
+            </e>
+            <e p="Provider" t="Include">
+              <e p="EntityProvider.cs" t="Include" />
+              <e p="JsonProvider.cs" t="Include" />
+              <e p="ProviderException.cs" t="Include" />
             </e>
             <e p="State" t="Include">
               <e p="IState.cs" t="Include" />

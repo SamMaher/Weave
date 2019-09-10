@@ -7,6 +7,6 @@ public class Heal : Action, IAttribute {
     
     public override void Invoke(ActionInfo actionInfo)
     {
-        GameManager.Game.Match.HealCharacter(actionInfo.Target, Attribute.Value);
+        MatchController.HealCharacter(actionInfo.Target, Attribute.Value);
     }
 }

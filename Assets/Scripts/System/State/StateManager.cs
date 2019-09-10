@@ -10,13 +10,19 @@ public abstract class StateManager {
     protected Type[] States { get; set; }
     public IState Current { get; set; }
 
-    public IEnumerator Start()
+    public void Start()
     {
-        Current.StartRunning();
+        CoroutineHandler.Handler.StartCoroutine(StartStates());
+    }
+
+    private IEnumerator StartStates()
+    {
+        Current.Enter();
         while (true)
         {
             while (Current.IsRunning()) yield return null;
-            Next();
+            var eventData = Next();
+            EventHandler.Notify(EventName.TurnEnded, eventData);
         }
     }
 
@@ -26,7 +32,7 @@ public abstract class StateManager {
         var exitState = Current.Exit();
         Current = newState ?? exitState;
         var toStateName = Current.GetType().ToString();
-        Current.StartRunning();
+        Current.Enter();
 
         return new StateChanged(fromStateName, toStateName);
     }

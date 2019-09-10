@@ -12,16 +12,16 @@ public static class UiHelper {
 
 	public static string RenderText(this Card card)
 	{
-		var defaultText = card.Text;
+		var unrenderedText = card.Text;
 
-		var attributes = card.Actions
+		var attributesByName = card.Actions
 			.OfType<IAttribute>()
 			.Select(action => action.Attribute)
 			.ToDictionary(
 				attribute => attribute.Name, 
 				attribute => attribute.CalculateValue().ToString());
 
-		return defaultText.ReplaceKeywords(attributes);
+		return unrenderedText.ReplaceKeywords(attributesByName);
 	}
 
 	private static string ReplaceKeywords(this string defaultText, Dictionary<string, string> keywordsByValue)

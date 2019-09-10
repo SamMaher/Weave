@@ -2,11 +2,12 @@
 /// 	Player Character
 /// </summary>
 public class Player : Character {
+    
     public Player()
     {
-        MaxHealth = 6;
+        MaxHealth = 10;
         Health = MaxHealth;
-        Armour = 3;
+        Armour = 5;
     }
 
     public override string GetIdentifier()

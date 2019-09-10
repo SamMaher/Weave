@@ -7,6 +7,6 @@ public class Draw : Action, IAttribute {
     
     public override void Invoke(ActionInfo actionInfo)
     {
-        GameManager.Game.Match.DrawCard();
+        MatchController.DrawCard();
     }
 }

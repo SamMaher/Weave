@@ -2,11 +2,12 @@
 ///     Names of events
 /// </summary>
 public enum EventName {
-    MatchBegin,
+    NewMatch,
     TurnEnded,
     Idle,
     Reaper,
     CharacterDied,
+    HandDrawn,
     CardDrawn,
     CardDiscarded,
     CardMoved,

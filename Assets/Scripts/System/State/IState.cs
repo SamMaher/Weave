@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 	Defines a Match state
+/// 	Defines a ManagerController state
 /// </summary>
 public interface IState {
     
-    void StartRunning();
+    void Enter();
 
     bool IsRunning();
 

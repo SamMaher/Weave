@@ -10,7 +10,7 @@ public class EnemyMove {
 
 	public MoveInfo GetMoveInfo(Character sourceCharacter)
 	{
-		var potentialTargets = GameManager.Game.Match.Characters.GetCharacters();
+		var potentialTargets = MatchController.Controller.CharacterManager.GetCharacters();
 		var validTargets = Conditions.Aggregate(
 			potentialTargets,
 			(targets, condition) 
@@ -18,7 +18,7 @@ public class EnemyMove {
 		);
 		
 		var chosenTarget = validTargets != null && validTargets.Any()
-			? validTargets.ChooseRandom()
+			? validTargets.SelectRandom()
 			: null;
 		
 		var targetCondition = Conditions.OfType<Target>().SingleOrDefault();

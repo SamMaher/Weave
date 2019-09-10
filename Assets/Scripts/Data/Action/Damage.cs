@@ -7,6 +7,6 @@ public class Damage : Action, IAttribute {
 
     public override void Invoke(ActionInfo actionInfo)
     {
-        GameManager.Game.Match.DamageCharacter(actionInfo.Target, Attribute.Value);
+       MatchController.DamageCharacter(actionInfo.Target, Attribute.Value);
     }
 }

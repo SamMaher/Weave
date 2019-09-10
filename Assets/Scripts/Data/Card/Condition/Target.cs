@@ -30,18 +30,17 @@ public class Target : Condition {
 
     private List<Character> FilterByTargetType(List<Character> targets) // TODO : Break this into helper class or the enum itself if re-used
     {
-        var match = GameManager.Game.Match;
-        var characters = match.Characters.GetCharacters();
-        var allies = match.Characters.GetAllies();
-        var enemies = match.Characters.GetEnemies().Cast<Character>().ToList(); // TODO : Not nice
+        var matchController = MatchController.Controller;
+        var allies = matchController.CharacterManager.GetAllies();
+        var enemies = matchController.CharacterManager.GetEnemies().Cast<Character>().ToList(); // TODO : Not nice
         
-        var isPlayerTurn = match.States.Current is PlayerTurn;
+        var isPlayerTurn = matchController.MatchStateManager.Current is PlayerTurn;
         
         switch (TargetType)
         {
             case TargetType.Enemy: return (isPlayerTurn) ? enemies : allies;
             case TargetType.Ally: return (isPlayerTurn) ? allies : enemies;
-            case TargetType.All: return characters;
+            case TargetType.All: return matchController.CharacterManager.GetCharacters();
             default: return null;
         }
     }

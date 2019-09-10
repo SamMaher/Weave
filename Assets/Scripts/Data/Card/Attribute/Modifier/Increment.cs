@@ -11,12 +11,12 @@ public class Increment : Modifier, IEventListener {
 
     public void StartListening() // TODO : Seems clunky - perhaps put this in constructors called when the match starts?
     {
-        EventManager.StartListening(EventName, IncrementValue);
+        EventHandler.StartListening(EventName, IncrementValue);
     }
     
     public void StopListening()
     {
-        EventManager.StopListening(EventName, IncrementValue);
+        EventHandler.StopListening(EventName, IncrementValue);
     }
     
     public void IncrementValue(object sender, EventData eventData)
