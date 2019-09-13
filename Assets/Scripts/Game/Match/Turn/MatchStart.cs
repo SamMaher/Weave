@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-///     // TODO
-/// </summary>
 public class MatchStart : IState {
     
     public bool MatchReady { get; set; }
@@ -31,7 +28,9 @@ public class MatchStart : IState {
     
     private IEnumerator ImagineWeAreWaitingToLoadMatch()
     {
-        yield return new WaitForSeconds(4);
+        MatchController.Controller.CharacterManager.NewEncounter();
+        
+        yield return new WaitForSeconds(1);
         MatchReady = true;
     }
 }

@@ -1,6 +1,6 @@
 [
     {
-        "id": "CA01",
+        "id": "A001",
         "name": "Spark",
         "text": "Deal {damage} damage.",
         "conditions": [
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "id": "CA02",
+        "id": "A002",
         "name": "Charge",
         "text": "Deal {damage} damage. Gains 1 damage whenever you draw a card.",
         "conditions": [ 
@@ -50,13 +50,13 @@
         ]
     },
     {
-        "id": "CA03",
+        "id": "A003",
         "name": "Breathe",
         "text": "Heal {heal}. +2 heal if you have less than 5 health.",
         "conditions": [ 
             {
                 "$type": "Target",
-                "targetType": "Ally",
+                "targetType": "Player",
                 "minimumHealth": 1
             }
         ],
@@ -80,7 +80,7 @@
         ]
     },
     {
-        "id": "CA04",
+        "id": "A004",
         "name": "Calm",
         "text": "Draw {draw} cards.",
         "conditions": [],
@@ -97,7 +97,7 @@
         ]
     },
     {
-        "id": "CA05",
+        "id": "A005",
         "name": "Meditate",
         "text": "Heal {heal} health. Draw {draw} card.",
         "conditions": [],

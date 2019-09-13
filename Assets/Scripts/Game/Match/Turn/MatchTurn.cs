@@ -3,9 +3,6 @@ using System.Collections;
 using Boo.Lang;
 using UnityEngine;
 
-/// <summary>
-///     ManagerController turn state
-/// </summary>
 public class MatchTurn : IState {
 
     public enum NextMatchTurn {
@@ -44,7 +41,7 @@ public class MatchTurn : IState {
     
     private IEnumerator ImagineWeAreWaitingGameStuff()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         MatchTurnComplete = true;
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,9 +23,9 @@ public class MatchController : ManagerController {
     protected override void AddManagers()
     {
         AttributeManager = new AttributeManager();
+        CharacterManager = new CharacterManager();
         MatchStateManager = new MatchStateManager();
         HandManager = new HandManager();
-        CharacterManager = new CharacterManager();
     }
 
     protected override void RemoveManagers()
@@ -33,6 +34,14 @@ public class MatchController : ManagerController {
         MatchStateManager = null;
         HandManager = null;
         CharacterManager = null;
+    }
+
+    public static NewMatch NewMatch()
+    {
+        Controller.New(); 
+        Controller.MatchStateManager.Start();
+        
+        return new NewMatch();
     }
     
     public static void DamageCharacter(Character target, int damage)
@@ -70,7 +79,7 @@ public class MatchController : ManagerController {
         EventHandler.Notify(EventName.CardDiscarded, cardMoved);
     }
 
-    public static void EndTurn()
+    public static void EndPlayerTurn()
     {
         var turnEnded = Controller.MatchStateManager.EndPlayerTurn();
         

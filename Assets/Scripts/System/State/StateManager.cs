@@ -2,9 +2,6 @@
 using System.Collections;
 using UnityEngine;
 
-/// <summary>
-/// 	Handles States
-/// </summary>
 public abstract class StateManager {
     
     protected Type[] States { get; set; }

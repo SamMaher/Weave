@@ -4,9 +4,6 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using UnityEngine;
 
-/// <summary>
-///     Generates objects From JSON input
-/// </summary>
 public class JsonFactory<T> where T : Entity {
     
     private readonly JsonSerializerSettings _settings;

@@ -4,9 +4,6 @@ using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.Experimental.AI;
 
-/// <summary>
-/// 	Manages Card data
-/// </summary>
 public class CardsProvider : JsonProvider<Card> {
     
     protected override string GetJsonDataFileName() => "card";
@@ -18,7 +15,7 @@ public class CardsProvider : JsonProvider<Card> {
         foreach (var card in deck.CardList)
         for (var i = 0; i < card.Value; i++)
         {
-            cards.Add(Store[card.Key]);
+            cards.Add(Read(card.Key));
         }
 
         var createdCards = Clone(cards.ToArray());

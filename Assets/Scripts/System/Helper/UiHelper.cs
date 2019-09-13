@@ -5,9 +5,6 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Networking.NetworkSystem;
 
-/// <summary>
-/// 	Helper methods for UI
-/// </summary>
 public static class UiHelper {
 
 	public static string RenderText(this Card card)
@@ -19,7 +16,7 @@ public static class UiHelper {
 			.Select(action => action.Attribute)
 			.ToDictionary(
 				attribute => attribute.Name, 
-				attribute => attribute.CalculateValue().ToString());
+				attribute => attribute.GetValue().ToString());
 
 		return unrenderedText.ReplaceKeywords(attributesByName);
 	}

@@ -5,7 +5,7 @@ using System.Linq;
 public abstract class JsonProvider<T>: EntityProvider<T> where T : Entity {
 
     private static JsonFactory<T> JsonFactory;
-    protected static Dictionary<string, T> Store { get; set; }
+    private static Dictionary<string, T> Store { get; set; }
 
     protected JsonProvider()
     {
@@ -68,5 +68,10 @@ public abstract class JsonProvider<T>: EntityProvider<T> where T : Entity {
     protected T[] Clone(T[] entities)
     {
         return JsonFactory.Clone(entities);
+    }
+
+    protected string[] GetIdentities()
+    {
+        return Store.Select(entity => entity.Key).ToArray();
     }
 }

@@ -1,9 +1,14 @@
 ﻿using System;
+using UnityEngine;
 
-/// <summary>
-///     Provides match attributes
-/// </summary>
 public class AttributeManager {
+
+    private readonly CharacterManager _characterManager;
+    
+    public AttributeManager()
+    {
+        _characterManager = MatchController.Controller.CharacterManager;
+    }
 
     public int Value(string matchAttribute)
     {
@@ -13,11 +18,9 @@ public class AttributeManager {
 
     private int Value(MatchAttribute matchAttribute)
     {
-        var characterManager = MatchController.Controller.CharacterManager;
-
         switch (matchAttribute)
         {
-            case (MatchAttribute.PlayerHealth): return characterManager.GetPlayer().Health;
+            case (MatchAttribute.PlayerHealth): return _characterManager.GetPlayer().Health;
             default: throw new AttributeNotImplementedException(matchAttribute.ToString());
         }
     }

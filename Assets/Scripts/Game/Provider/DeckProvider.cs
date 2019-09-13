@@ -2,5 +2,5 @@ public class DeckProvider : JsonProvider<Deck> {
 
     protected override string GetJsonDataFileName() => "deck";
 
-    public Deck GetDeck(string deckId) => Read(deckId);
+    public Deck GetDeck(string deckIdentity) => Read(deckIdentity);
 }

@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-///     Player turn state
-/// </summary>
 public class PlayerTurn : IState { 
 
     public bool EndPlayerTurn { get; set; }
@@ -12,8 +9,6 @@ public class PlayerTurn : IState {
     public void Enter()
     {
         EndPlayerTurn = false;
-        
-        CoroutineHandler.Handler.StartCoroutine(WaitThenEndTurn());
     }
 
     public bool IsRunning()
@@ -27,11 +22,5 @@ public class PlayerTurn : IState {
         {
             NextTurn = MatchTurn.NextMatchTurn.EnemyTurn
         };
-    }
-
-    private IEnumerator WaitThenEndTurn()
-    {
-        yield return new WaitForSeconds(2);
-        EndPlayerTurn = true;
     }
 }

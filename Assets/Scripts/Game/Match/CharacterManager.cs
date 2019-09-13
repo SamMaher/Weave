@@ -1,33 +1,44 @@
 ﻿using System;
 using System.CodeDom;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-/// <summary>
-/// 	Manages Character data
-/// </summary>
 public class CharacterManager {
 
-    private List<Character> Characters { get; set; }
-
-    public CharacterManager() // TODO : Mangers get passed values and then manage them
-    {
-        Characters = new List<Character>() { new Player() };
-    }
+    private Player Player { get; set; }
+    private List<Enemy> Enemies { get; set; }
     
     #region Get
 
-    public List<Character> GetCharacters() => Characters;
+    public List<Character> GetCharacters()
+    {
+        var allCharactersList = new List<Character>();
+        
+        allCharactersList.AddRange(Enemies);
+        allCharactersList.Add(Player);
 
-    public Player GetPlayer() => Characters.OfType<Player>().Single();
+        return allCharactersList;
+    }
 
-    public List<Character> GetAllies() => Characters.Except(GetEnemies()).ToList();
+    public Player GetPlayer() => Player;
 
-    public List<Enemy> GetEnemies() => Characters.OfType<Enemy>().ToList();
+    public List<Enemy> GetEnemies() => Enemies;
     
     #endregion
 
+    public void NewEncounter()
+    {
+        var encounterProvider = new EncounterProvider();
+        var enemyProvider = new EnemyProvider();
+
+        var encounter = encounterProvider.GetRandomEncounter();
+
+        Player = new Player();
+        Enemies = enemyProvider.CloneEnemiesFromEncounter(encounter).ToList();
+    }
+    
     public CharacterDamaged DamageCharacter(Character target, int damage)
     {
         var targetHealthAfterDamage = Math.Max(0, target.Health - damage);

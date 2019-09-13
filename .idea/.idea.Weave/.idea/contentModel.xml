@@ -7,11 +7,43 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Data" t="Include">
+          <e p="Game" t="Include">
+            <e p="Game.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="GameStateManager.cs" t="Include" />
+            <e p="Match" t="Include">
+              <e p="Animation" t="Include">
+                <e p="AttackAnimation.cs" t="Include" />
+                <e p="DrawCardAnimation.cs" t="Include" />
+              </e>
+              <e p="AttributeManager.cs" t="Include" />
+              <e p="AttributeManagerException.cs" t="Include" />
+              <e p="CharacterManager.cs" t="Include" />
+              <e p="HandManager.cs" t="Include" />
+              <e p="MatchController.cs" t="Include" />
+              <e p="MatchStateManager.cs" t="Include" />
+              <e p="MatchStateManagerException.cs" t="Include" />
+              <e p="Turn" t="Include">
+                <e p="EnemyTurn.cs" t="Include" />
+                <e p="MatchStart.cs" t="Include" />
+                <e p="MatchTurn.cs" t="Include" />
+                <e p="PlayerTurn.cs" t="Include" />
+              </e>
+            </e>
+            <e p="PlayerManager.cs" t="Include" />
+            <e p="Provider" t="Include">
+              <e p="CardsProvider.cs" t="Include" />
+              <e p="DeckProvider.cs" t="Include" />
+              <e p="EncounterProvider.cs" t="Include" />
+              <e p="EnemyProvider.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Model" t="Include">
             <e p="Action" t="Include">
               <e p="Action.cs" t="Include" />
               <e p="ActionInfo.cs" t="Include" />
               <e p="Damage.cs" t="Include" />
+              <e p="Defend.cs" t="Include" />
               <e p="Draw.cs" t="Include" />
               <e p="EnemyAction" t="Include">
                 <e p="EnemyMove.cs" t="Include" />
@@ -49,6 +81,9 @@
               <e p="Enemy.cs" t="Include" />
               <e p="Player.cs" t="Include" />
             </e>
+            <e p="Encounter" t="Include">
+              <e p="Encounter.cs" t="Include" />
+            </e>
             <e p="Event" t="Include">
               <e p="EventData" t="Include">
                 <e p="CardMoved.cs" t="Include" />
@@ -64,35 +99,6 @@
               <e p="IEventListener.cs" t="Include" />
             </e>
           </e>
-          <e p="Game" t="Include">
-            <e p="Game.cs" t="Include" />
-            <e p="GameController.cs" t="Include" />
-            <e p="GameStateManager.cs" t="Include" />
-            <e p="Match" t="Include">
-              <e p="Animation" t="Include">
-                <e p="AttackAnimation.cs" t="Include" />
-                <e p="DrawCardAnimation.cs" t="Include" />
-              </e>
-              <e p="AttributeManager.cs" t="Include" />
-              <e p="CharacterManager.cs" t="Include" />
-              <e p="HandManager.cs" t="Include" />
-              <e p="MatchController.cs" t="Include" />
-              <e p="MatchStateManager.cs" t="Include" />
-              <e p="Turn" t="Include">
-                <e p="AttributeManagerException.cs" t="Include" />
-                <e p="EnemyTurn.cs" t="Include" />
-                <e p="MatchStart.cs" t="Include" />
-                <e p="MatchTurn.cs" t="Include" />
-                <e p="PlayerTurn.cs" t="Include" />
-              </e>
-            </e>
-            <e p="PlayerManager.cs" t="Include" />
-            <e p="Provider" t="Include">
-              <e p="CardsProvider.cs" t="Include" />
-              <e p="DeckProvider.cs" t="Include" />
-              <e p="EnemyProvider.cs" t="Include" />
-            </e>
-          </e>
           <e p="system" t="Include">
             <e p="Animation" t="Include">
               <e p="AnimationChannel.cs" t="Include" />
@@ -104,7 +110,6 @@
               <e p="ViewAnimation.cs" t="Include" />
             </e>
             <e p="Controller" t="Include">
-              <e p="ControllerException.cs" t="Include" />
               <e p="ManagerController.cs" t="Include" />
             </e>
             <e p="Entity" t="Include">
@@ -120,7 +125,7 @@
               <e p="EventHandler.cs" t="Include" />
             </e>
             <e p="Helper" t="Include">
-              <e p="ListHelper.cs" t="Include" />
+              <e p="RandomHelper.cs" t="Include" />
               <e p="UiHelper.cs" t="Include" />
             </e>
             <e p="Provider" t="Include">

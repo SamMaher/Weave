@@ -2,9 +2,6 @@
 using UnityEngine;
 using Handler = System.Action<object, EventData>;
 
-/// <summary>
-///     Manages all events for a ManagerController
-/// </summary>
 public static class EventHandler {
     
     private static readonly Dictionary<EventName, Handler> Events = new Dictionary<EventName, Handler>();

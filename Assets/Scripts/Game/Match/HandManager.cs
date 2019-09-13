@@ -2,9 +2,6 @@
 using System.Linq;
 using UnityEngine;
 
-/// <summary>
-/// 	// TODO : Just rewrite all of these
-/// </summary>
 public class HandManager {
     
     private List<Card> Cards { get; set; }
@@ -43,6 +40,7 @@ public class HandManager {
         foreach (var card in Cards)
         {
             card.Zone = Zone.Deck;
+            card.StartListening();
         }
     }
 

@@ -1,12 +1,12 @@
 public abstract class ManagerController {
     
-    public void New()
+    protected void New()
     {
         End();
         AddManagers();
     }
     
-    public void End()
+    protected void End()
     {
         RemoveManagers();
     }

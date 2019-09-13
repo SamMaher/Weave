@@ -1,0 +1,7 @@
+[
+  {
+    "id": "A001",
+    "name": "Encounter 1",
+    "enemyList": [ "A001", "A001", "A002" ]
+  }
+]

@@ -23,11 +23,15 @@
         PlayerManager = null;
     }
 
+    public static void NewGame()
+    {
+        Controller.New();
+    }
+
     public static void NewMatch()
     {
-        MatchController.Controller.New();
-        MatchController.Controller.MatchStateManager.Start();
+        var eventData = MatchController.NewMatch();
         
-        EventHandler.Notify(EventName.NewMatch, new NewMatch());
+        EventHandler.Notify(EventName.NewMatch, eventData);
     }
 }

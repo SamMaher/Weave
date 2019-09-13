@@ -1,6 +1,6 @@
 [
     {
-        "id": "EA01",
+        "id": "A001",
         "name": "Wolf",
         "maxHealth": 2,
         "health": 3,
@@ -11,23 +11,25 @@
                 "conditions": [
                     {
                         "$type": "Target",
-                        "targetType": "Enemy"
+                        "targetType": "Player"
                     }
                 ],
-                "action": {
-                    "$type": "Damage",
-                    "damage": {
-                        "$type": "Attribute",
-                        "name": "damage",
-                        "value": 2,
-                        "modifiers": []
+                "actions": [
+                    {
+                        "$type": "Damage",
+                        "attribute": {
+                            "$type": "Attribute",
+                            "name": "damage",
+                            "value": 2,
+                            "modifiers": []
+                        }
                     }
-                }
+                ]
             }
         ]
     },
     {
-        "id": "EA02",
+        "id": "A002",
         "name": "Dire Wolf",
         "maxHealth": 4,
         "health": 6,
@@ -39,7 +41,7 @@
                     {
                         "$type": "Target",
                         "minimumTargets": 1,
-                        "targetType": "Ally"
+                        "targetType": "Enemy"
                     },
                     {
                         "$type": "HealthLost",
@@ -50,38 +52,42 @@
                         "targetCount": 2
                     }
                 ],
-                "action": {
-                    "$type": "Defend",
-                    "armour": {
-                        "$type": "Attribute",
-                        "name": "defend",
-                        "value": 1,
-                        "modifiers": []
+                "actions": [
+                    {
+                        "$type": "Defend",
+                        "attribute": {
+                            "$type": "Attribute",
+                            "name": "defend",
+                            "value": 1,
+                            "modifiers": []
+                        }
                     }
-                }
+                ]
             },
             {
                 "$type": "EnemyMove",
                 "conditions": [
                     {
                         "$type": "Target",
-                        "targetType": "Enemy"
+                        "targetType": "Player"
                     }
                 ],
-                "action": {
-                    "$type": "Damage",
-                    "damage": {
-                        "$type": "Attribute",
-                        "name": "damage",
-                        "value": 3,
-                        "modifiers": []
+                "actions": [
+                    {
+                        "$type": "Damage",
+                        "attribute": {
+                            "$type": "Attribute",
+                            "name": "damage",
+                            "value": 3,
+                            "modifiers": []
+                        }
                     }
-                }
+                ]
             }
         ]
     },
     {
-        "id": "EA03",
+        "id": "A003",
         "name": "Alpha Wolf",
         "maxHealth": 6,
         "health": 6,
@@ -92,33 +98,37 @@
                 "conditions": [
                     {
                         "$type": "AllyCount",
-                        "allyId": "EA01",
+                        "allyId": "A001",
                         "minAllies": "0"
                     }
                 ],
-                "action": {
-                    "$type": "Summon",
-                    "characterId": "EA01",
-                    "characterCount": 2
-                }
+                "actions": [
+                    {
+                        "$type": "Summon",
+                        "characterId": "A001",
+                        "characterCount": 2
+                    }
+                ]
             },
             {
                 "$type": "EnemyMove",
                 "conditions": [
                     {
                         "$type": "Target",
-                        "targetType": "Enemy"
+                        "targetType": "Player"
                     }
                 ],
-                "action": {
-                    "$type": "Damage",
-                    "damage": {
-                        "$type": "Attribute",
-                        "name": "damage",
-                        "value": 3,
-                        "modifiers": []
+                "actions": [
+                    {
+                        "$type": "Damage",
+                        "attribute": {
+                            "$type": "Attribute",
+                            "name": "damage",
+                            "value": 3,
+                            "modifiers": []
+                        }
                     }
-                }
+                ]
             }
         ]
     }

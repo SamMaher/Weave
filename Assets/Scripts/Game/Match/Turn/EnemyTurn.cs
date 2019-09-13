@@ -1,10 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-/// <summary>
-///     Enemy turn state
-/// </summary>
 public class EnemyTurn : IState {
     
     public bool EnemyActionsComplete { get; set; }
@@ -17,24 +16,21 @@ public class EnemyTurn : IState {
         var characterManager = MatchController.Controller.CharacterManager;
         Player = characterManager.GetPlayer();
         Enemies = characterManager.GetEnemies();
-
-        // Loop through and run each enemies moves // TODO : Let's do this once a frame
+        
+        // Loop through and run each enemies moves
         foreach (var enemy in Enemies)
         foreach (var move in enemy.Moves)
         {
             var moveInfo = move.GetMoveInfo(enemy);
             if (!moveInfo.Valid) continue;
-            // TODO : Potentially handle random chance? 'Chance' condition, that rolls to determine validity.
-            // Or, weight every condition, additively, highest met move is done
-            move.Invoke(moveInfo); // TODO : Create animation
+            move.Invoke(moveInfo); 
             break;
         }
         
-        // TODO : Queue animations
         CoroutineHandler.Handler.StartCoroutine(ImagineWeAreWaitingForAnimations());
     }
 
-    public bool IsRunning() // TODO : Let's lock this to FixedUpdate to avoid thread shtuff?
+    public bool IsRunning()
     {
         return !EnemyActionsComplete;
     }
@@ -47,9 +43,9 @@ public class EnemyTurn : IState {
         };
     }
     
-    private IEnumerator ImagineWeAreWaitingForAnimations() // TODO : Util for Coroutines?
+    private IEnumerator ImagineWeAreWaitingForAnimations()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         EnemyActionsComplete = true;
     }
 }

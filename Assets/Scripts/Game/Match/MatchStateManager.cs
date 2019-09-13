@@ -1,7 +1,4 @@
-﻿/// <summary>
-/// 	Handles ManagerController States, turn order etc.
-/// </summary>
-public class MatchStateManager : StateManager {
+﻿public class MatchStateManager : StateManager {
     
     public MatchStateManager()
     {
@@ -16,10 +13,18 @@ public class MatchStateManager : StateManager {
         Current = new MatchStart();
     }
 
+    public bool IsPlayerTurn()
+    {
+        return MatchController.Controller.MatchStateManager.Current is PlayerTurn;
+    }
+
     public TurnChanged EndPlayerTurn()
     {
+        if (!IsPlayerTurn()) throw new NotPlayerTurnException();
+            
         var stateChanged = Next();
-        var turnChanged = TurnChanged.FromStateChanged(stateChanged);
+        var turnChanged = new TurnChanged(stateChanged.FromStateName, stateChanged.ToStateName);
+        
         return turnChanged;
     }
 }
