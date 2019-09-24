@@ -29,7 +29,7 @@ public class HandManager {
 
     #endregion
 
-    public void OpenDeck(string identity = null) // TODO : Create transport and model version of the cards. Models get used in game, Transports outside of.
+    public void OpenDeck(string identity = null)
     {
         var deckProvider = new DeckProvider();
         var cardsProvider = new CardsProvider();
@@ -97,9 +97,9 @@ public class HandManager {
 
     public void ShuffleDeck()
     {
-        GetDeck().ToList().Shuffle(); // TODO : This wont shuffle...
-        // re: above...do we separate, shuffle, then recombine?
-        // have multiple decks/dictionary of decks?
+        GetDeck().ToList().Shuffle(); // TODO : Definitely index cards, then only shuffle by their relative index
+        // Order by mechanic takes into account location first, then index
+        // Get calls ^ order by always ???
     }
 
     public void Recycle()

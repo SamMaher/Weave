@@ -19,6 +19,7 @@ public class MatchController : ManagerController {
     public MatchStateManager MatchStateManager;
     public HandManager HandManager;
     public CharacterManager CharacterManager;
+    public MatchViewManager MatchViewManager;
 
     protected override void AddManagers()
     {
@@ -26,6 +27,7 @@ public class MatchController : ManagerController {
         CharacterManager = new CharacterManager();
         MatchStateManager = new MatchStateManager();
         HandManager = new HandManager();
+        MatchViewManager = new MatchViewManager();
     }
 
     protected override void RemoveManagers()
@@ -34,6 +36,7 @@ public class MatchController : ManagerController {
         MatchStateManager = null;
         HandManager = null;
         CharacterManager = null;
+        MatchViewManager = null;
     }
 
     public static NewMatch NewMatch()

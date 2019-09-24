@@ -17,4 +17,9 @@ public class Game : MonoBehaviour {
     {
         MatchController.EndPlayerTurn();
     }
+    
+    public void DrawCard()
+    {
+        MatchController.DrawCard();
+    }
 }

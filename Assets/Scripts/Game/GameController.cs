@@ -1,4 +1,6 @@
-﻿public class GameController : ManagerController {
+﻿using System.Collections.Generic;
+
+public class GameController : ManagerController {
 
     private static GameController _controller;
     public static GameController Controller

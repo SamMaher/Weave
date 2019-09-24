@@ -23,11 +23,17 @@
               <e p="MatchController.cs" t="Include" />
               <e p="MatchStateManager.cs" t="Include" />
               <e p="MatchStateManagerException.cs" t="Include" />
+              <e p="MatchViewManager.cs" t="Include" />
               <e p="Turn" t="Include">
                 <e p="EnemyTurn.cs" t="Include" />
                 <e p="MatchStart.cs" t="Include" />
                 <e p="MatchTurn.cs" t="Include" />
                 <e p="PlayerTurn.cs" t="Include" />
+              </e>
+              <e p="View" t="Include">
+                <e p="CardView.cs" t="Include" />
+                <e p="FieldView.cs" t="Include" />
+                <e p="HandView.cs" t="Include" />
               </e>
             </e>
             <e p="PlayerManager.cs" t="Include" />
@@ -112,30 +118,41 @@
             <e p="Controller" t="Include">
               <e p="ManagerController.cs" t="Include" />
             </e>
+            <e p="Coroutine" t="Include">
+              <e p="CoroutineHandler.cs" t="Include" />
+            </e>
             <e p="Entity" t="Include">
               <e p="Entity.cs" t="Include" />
               <e p="IdentityType.cs" t="Include" />
               <e p="IdentityTypeException.cs" t="Include" />
             </e>
-            <e p="Factory" t="Include">
-              <e p="JsonFactory.cs" t="Include" />
-            </e>
-            <e p="Handler" t="Include">
-              <e p="CoroutineHandler.cs" t="Include" />
+            <e p="Event" t="Include">
               <e p="EventHandler.cs" t="Include" />
             </e>
-            <e p="Helper" t="Include">
-              <e p="RandomHelper.cs" t="Include" />
-              <e p="UiHelper.cs" t="Include" />
+            <e p="Factory" t="Include">
+              <e p="JsonFactory.cs" t="Include" />
             </e>
             <e p="Provider" t="Include">
               <e p="EntityProvider.cs" t="Include" />
               <e p="JsonProvider.cs" t="Include" />
               <e p="ProviderException.cs" t="Include" />
             </e>
+            <e p="Resource" t="Include">
+              <e p="PrefabHandlerException.cs" t="Include" />
+              <e p="UiViewHandler.cs" t="Include" />
+            </e>
             <e p="State" t="Include">
               <e p="IState.cs" t="Include" />
               <e p="StateManager.cs" t="Include" />
+            </e>
+            <e p="Utility" t="Include">
+              <e p="RandomHelper.cs" t="Include" />
+              <e p="UiHelper.cs" t="Include" />
+            </e>
+            <e p="View" t="Include">
+              <e p="EntityView.cs" t="Include" />
+              <e p="UiView.cs" t="Include" />
+              <e p="UiViewHelper.cs" t="Include" />
             </e>
           </e>
         </e>

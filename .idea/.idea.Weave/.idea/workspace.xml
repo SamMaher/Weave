@@ -1,148 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Assets/Scripts/System/View/UiView.cs" line="29" mnemonic="1" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="59ef5bbb-94e6-4616-a620-592f4c5ecbc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Data/encounter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManagerException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManagerException.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Provider/EncounterProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Provider/EncounterProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Defend.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Defend.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Summon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Attribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/MatchAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/TargetType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Zone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Character/Enemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Character/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Encounter.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Encounter/Encounter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Encounter/Encounter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/EventData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/StateChanged.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/TurnChanged.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchViewManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchViewManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/View.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/CardView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/CardView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/FieldView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/FieldView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/HandView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/HandView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/System/Resource.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/System/Resource/PrefabHandlerException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/System/Resource/PrefabHandlerException.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/System/Resource/UiViewHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/System/Resource/UiViewHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/System/View/EntityView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/System/View/EntityView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Weave/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Weave/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Weave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Weave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/card.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/card.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/deck.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/deck.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/enemy.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/enemy.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/_demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Action.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Action.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Action.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Action.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/ActionInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/ActionInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/ActionInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/ActionInfo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Damage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Damage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Damage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Damage.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Draw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Draw.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Draw.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Draw.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/EnemyAction.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/EnemyAction.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/EnemyAction/EnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/EnemyAction/EnemyMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/EnemyAction/EnemyMove.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/EnemyAction/EnemyMove.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/EnemyAction/MoveInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/EnemyAction/MoveInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/EnemyAction/MoveInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/EnemyAction/MoveInfo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Heal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Heal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Heal.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Heal.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Summon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Action/Summon.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Action/Summon.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Attribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Attribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Attribute.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/IAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/IAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/IAttribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/IAttribute.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/MatchAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/MatchAttribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/MatchAttribute.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Modifier.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Modifier.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Modifier/Increment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Modifier/Increment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Modifier/Increment.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Modifier/Increment.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Modifier/Modifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Modifier/Modifier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Modifier/Modifier.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Modifier/Modifier.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Modifier/Threshold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Modifier/Threshold.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Modifier/Threshold.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Modifier/Threshold.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Card.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Card.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/AllyCount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/AllyCount.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/AllyCount.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/AllyCount.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/Condition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/Condition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/Condition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/Condition.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/HealthLost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/HealthLost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/HealthLost.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/HealthLost.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/MinimumTargets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/MinimumTargets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/MinimumTargets.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/MinimumTargets.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/Target.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/Target.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/TargetType.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Condition/TargetType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/TargetType.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Deck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Deck.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Deck.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Deck.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Rarity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Rarity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Rarity.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Rarity.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Zone.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Card/Zone.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Zone.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Character.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Character.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Character/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Character/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Character/Character.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Character/Character.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Character/Enemy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Character/Enemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Character/Enemy.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Character/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Character/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Character/Player.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/CardMoved.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CardMoved.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/CardMoved.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CardMoved.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/CharacterDamaged.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CharacterDamaged.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/CharacterDamaged.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CharacterDamaged.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/CharacterHealed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CharacterHealed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/CharacterHealed.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CharacterHealed.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/EventData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/EventData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/EventData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/HandDrawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/HandDrawn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/HandDrawn.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/HandDrawn.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/NewMatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/NewMatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/NewMatch.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/NewMatch.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/StateChanged.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/StateChanged.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/StateChanged.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/TurnChanged.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventData/TurnChanged.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/TurnChanged.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/EventName.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/EventName.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/IEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/IEventListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Event/IEventListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Event/IEventListener.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs___jb_tmp___.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameStateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/CharacterManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/HandManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/HandManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/AttributeManagerException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManagerException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/AttributeManagerException.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManagerException.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/EnemyTurn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/EnemyTurn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchStart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchStart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchTurn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchTurn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/PlayerTurn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/PlayerTurn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Provider/CardsProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Provider/CardsProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Provider/DeckProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Provider/DeckProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Provider/EnemyProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Provider/EnemyProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Controller/ControllerException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Controller/ControllerException.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Controller/ManagerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Controller/ManagerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Entity/IdentityTypeException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Entity/IdentityTypeException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Factory/JsonFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Factory/JsonFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Handler/EventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Handler/EventHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Helper/ListHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Helper/RandomHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Helper/ListHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Helper/RandomHelper.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Helper/UiHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Helper/UiHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Provider/JsonProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Provider/JsonProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/State/IState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/State/IState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/State/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/State/StateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Modifier/Increment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Modifier/Increment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Card/Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Animation/AnimationChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Animation/AnimationChannel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Handler.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Handler/CoroutineHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Handler/CoroutineHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Handler/EventHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Handler/EventHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Helper.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Utility.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Helper/RandomHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Utility/RandomHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Helper/RandomHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Utility/RandomHelper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Helper/UiHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Utility/UiHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/Helper/UiHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/Utility/UiHelper.cs.meta" afterDir="false" />
     </list>
     <ignored path=".idea/.idea.Weave/.idea/vcs.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,17 +58,17 @@
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="10" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="12" />
           <entry key="project.open.time.7" value="19" />
           <entry key="project.open.time.8" value="16" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="57" />
+          <entry key="project.opened" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="939" />
+          <entry key="cs" value="990" />
           <entry key="json" value="47" />
           <entry key="unity" value="1" />
           <entry key="xml" value="1" />
@@ -178,7 +76,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="939" />
+          <entry key="C#" value="990" />
           <entry key="JSON" value="47" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
@@ -186,14 +84,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="72787" />
+          <entry key="cs" value="82318" />
           <entry key="json" value="1404" />
           <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="72787" />
+          <entry key="C#" value="82318" />
           <entry key="JSON" value="1404" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
@@ -206,136 +104,181 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchController.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Event/EventHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="46" column="38" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="38" />
+            <state relative-caret-position="375">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <marker date="1568368220171" expanded="false" signature="6:66" ph="..." />
-                <marker date="1568368220171" expanded="true" signature="117:2483" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="229:424" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="248:418" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="644:852" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="898:1038" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="1077:1202" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="1276:1464" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="1534:1715" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="1750:1891" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="1942:2087" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="2134:2289" ph="{...}" />
-                <marker date="1568368220171" expanded="true" signature="2329:2481" ph="{...}" />
+                <marker date="1568369935471" expanded="false" signature="6:102" ph="..." />
+                <marker date="1568369935471" expanded="true" signature="137:937" ph="{...}" />
+                <marker date="1568369935471" expanded="true" signature="325:518" ph="{...}" />
+                <marker date="1568369935471" expanded="true" signature="375:438" ph="{...}" />
+                <marker date="1568369935471" expanded="true" signature="451:512" ph="{...}" />
+                <marker date="1568369935471" expanded="true" signature="593:642" ph="{...}" />
+                <marker date="1568369935471" expanded="true" signature="715:935" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/Damage.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/HandManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Attribute.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchTurn.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            <state relative-caret-position="-198">
+              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding>
-                <marker date="1568370684193" expanded="false" signature="6:74" ph="..." />
-                <marker date="1568370684193" expanded="true" signature="108:1186" ph="{...}" />
-                <marker date="1568370684193" expanded="true" signature="141:186" ph="{...}" />
-                <marker date="1568370684193" expanded="true" signature="312:662" ph="{...}" />
-                <marker date="1568370684193" expanded="true" signature="363:566" ph="/* TODO : We will pick up the list of match events/animations etc. run them, then return to a character turn ... */" />
-                <marker date="1568370684193" expanded="true" signature="691:738" ph="{...}" />
-                <marker date="1568370684193" expanded="true" signature="764:1034" ph="{...}" />
-                <marker date="1568370684193" expanded="true" signature="796:1028" ph="{...}" />
-                <marker date="1568370684193" expanded="true" signature="1094:1184" ph="{...}" />
+                <marker date="1569209693989" expanded="false" signature="6:71" ph="..." />
+                <marker date="1569209693989" expanded="true" signature="98:2942" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="173:205" ph="{...}" />
+                <marker date="1569209693989" expanded="false" signature="211:658" ph="&quot;Get&quot;" />
+                <marker date="1569209693989" expanded="true" signature="279:400" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="708:1132" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="1036:1126" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="1165:1683" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="1522:1619" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="1747:1898" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="1951:2083" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="2132:2533" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="2213:2314" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="2564:2808" ph="{...}" />
+                <marker date="1569209693989" expanded="true" signature="2693:2802" ph="/* Order by mechanic takes into account location first, then index ... */" />
+                <marker date="1569209693989" expanded="true" signature="2835:2940" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/EnemyAction/MoveInfo.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <marker date="1568375710617" expanded="true" signature="22:147" ph="{...}" />
-                <marker date="1568375710617" expanded="true" signature="188:387" ph="{...}" />
-                <marker date="1568375710617" expanded="true" signature="269:385" ph="{...}" />
-                <marker date="1568375710617" expanded="true" signature="299:381" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Resources/Data/card.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Character/Character.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-              <folding>
-                <marker date="1568369867755" expanded="false" signature="6:32" ph="..." />
-                <marker date="1568369867755" expanded="true" signature="75:190" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Card.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchViewManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding>
-                <marker date="1568369871627" expanded="false" signature="6:73" ph="..." />
-                <marker date="1568369871627" expanded="true" signature="102:697" ph="{...}" />
-                <marker date="1568369871627" expanded="true" signature="465:695" ph="{...}" />
-                <marker date="1568369871627" expanded="true" signature="609:689" ph="{...}" />
+                <marker date="1569321058411" expanded="true" signature="65:996" ph="{...}" />
+                <marker date="1569321058411" expanded="true" signature="192:378" ph="{...}" />
+                <marker date="1569321058411" expanded="true" signature="412:492" ph="{...}" />
+                <marker date="1569321058411" expanded="true" signature="525:604" ph="{...}" />
+                <marker date="1569321058411" expanded="true" signature="671:821" ph="{...}" />
+                <marker date="1569321058411" expanded="true" signature="895:994" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/View/CardView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+              <folding>
+                <marker date="1569360264082" expanded="true" signature="6:40" ph="..." />
+                <marker date="1569360264082" expanded="true" signature="83:378" ph="{...}" />
+                <marker date="1569360264082" expanded="true" signature="266:376" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <marker date="1568369890034" expanded="false" signature="6:32" ph="..." />
+                <marker date="1568369890034" expanded="true" signature="64:749" ph="{...}" />
+                <marker date="1568369890034" expanded="true" signature="158:243" ph="{...}" />
+                <marker date="1568369890034" expanded="true" signature="288:444" ph="{...}" />
+                <marker date="1568369890034" expanded="true" signature="498:747" ph="{...}" />
+                <marker date="1568369890034" expanded="true" signature="536:741" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/Action.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Resource/UiViewHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
               <folding>
-                <marker date="1568369877997" expanded="true" signature="44:108" ph="{...}" />
+                <marker date="1569359521927" expanded="false" signature="6:73" ph="..." />
+                <marker date="1569359521927" expanded="true" signature="118:1939" ph="{...}" />
+                <marker date="1569359521927" expanded="false" signature="125:291" ph="Class" />
+                <marker date="1569359521927" expanded="true" signature="197:271" ph="{...}" />
+                <marker date="1569359521927" expanded="true" signature="499:683" ph="{...}" />
+                <marker date="1569359521927" expanded="true" signature="567:625" ph="{...}" />
+                <marker date="1569359521927" expanded="true" signature="778:1395" ph="{...}" />
+                <marker date="1569359521927" expanded="true" signature="1557:1937" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Resources/Data/enemy.json">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/View/UiViewHelper.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            <state relative-caret-position="300">
+              <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+              <folding>
+                <marker date="1568892010202" expanded="false" signature="6:50" ph="..." />
+                <marker date="1568892010202" expanded="true" signature="85:535" ph="{...}" />
+                <marker date="1568892010202" expanded="true" signature="276:302" ph="{...}" />
+                <marker date="1568892010202" expanded="true" signature="356:380" ph="{...}" />
+                <marker date="1568892010202" expanded="true" signature="459:533" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/View/EntityView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <marker date="1569360188258" expanded="true" signature="62:498" ph="{...}" />
+                <marker date="1569360188258" expanded="true" signature="174:258" ph="{...}" />
+                <marker date="1569360188258" expanded="true" signature="297:449" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/View/HandView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+              <folding>
+                <marker date="1569327367017" expanded="false" signature="6:71" ph="..." />
+                <marker date="1569327367017" expanded="true" signature="104:2184" ph="{...}" />
+                <marker date="1569327367017" expanded="true" signature="462:1586" ph="{...}" />
+                <marker date="1569327367017" expanded="true" signature="1286:1580" ph="{...}" />
+                <marker date="1569327367017" expanded="true" signature="1613:1799" ph="{...}" />
+                <marker date="1569327367017" expanded="true" signature="1835:1983" ph="{...}" />
+                <marker date="1569327367017" expanded="true" signature="2022:2182" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/View/UiView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <folding>
+                <marker date="1569214994301" expanded="false" signature="6:151" ph="..." />
+                <marker date="1569214994301" expanded="true" signature="291:2068" ph="{...}" />
+                <marker date="1569214994301" expanded="true" signature="588:992" ph="{...}" />
+                <marker date="1569214994301" expanded="true" signature="808:989" ph="/* TODO : Add rotation ... */" />
+                <marker date="1569214994301" expanded="true" signature="1164:1276" ph="{...}" />
+                <marker date="1569214994301" expanded="true" signature="1372:1451" ph="{...}" />
+                <marker date="1569214994301" expanded="true" signature="1541:1636" ph="{...}" />
+                <marker date="1569214994301" expanded="true" signature="1729:1829" ph="{...}" />
+                <marker date="1569214994301" expanded="true" signature="1925:2023" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -344,15 +287,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>enum</find>
-      <find>EnemyAction</find>
-      <find>Aggregate</find>
-      <find>StartCoro</find>
-      <find>StartCoroutine</find>
-      <find>Iden</find>
-      <find>An</find>
-      <find>.Handler.StartCoroutine</find>
-      <find>thresh</find>
       <find>IdentityType.</find>
       <find>_instan</find>
       <find>GameController.Controller</find>
@@ -374,6 +308,15 @@
       <find>Debug.Log</find>
       <find>: EventData</find>
       <find>TODO</find>
+      <find>&lt;T&gt;</find>
+      <find>where T</find>
+      <find>&quot;card&quot;</find>
+      <find>count</find>
+      <find>Update</find>
+      <find>StartListening</find>
+      <find>EventHandler.StartListening</find>
+      <find>CardDrawn</find>
+      <find>EventHandler.StartListenin</find>
     </findStrings>
     <replaceStrings>
       <replace>zone</replace>
@@ -385,7 +328,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B3B070EA-E227-4AD8-BD5D-A20D5076749B/d0/4120471a/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Character/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Handler/EventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/IEventListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Controller/ManagerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManagerException.cs" root0="FORCE_HIGHLIGHTING" />
@@ -403,31 +345,33 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Animation/AnimationChannel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Character/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/HealthLost.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Helper/UiHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Utility/UiHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/View/EntityView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/Damage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/CharacterManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Handler/CoroutineHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/State/StateManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/State/IState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/View/UiViewHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/EventData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Provider/EnemyProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CardMoved.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8732DE5-BEEC-4A87-8F92-8152240B5DC1/40/747ebdca/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8732DE5-BEEC-4A87-8F92-8152240B5DC1/43/e80b5f44/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/IAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/MinimumTargets.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Factory/JsonFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Entity/IdentityTypeException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8732DE5-BEEC-4A87-8F92-8152240B5DC1/14/bcebe82b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/Heal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Event/EventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/Condition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Coroutine/CoroutineHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5F8F12B8-1C2A-4DE1-974A-9E2DF83E60F8/ab/9d2f23cd/BuildPipelineInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/StateChanged.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/AllyCount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/View/UiView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/Action.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/Attribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Animation/AnimationChannelName.cs" root0="FORCE_HIGHLIGHTING" />
@@ -436,6 +380,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManagerException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchViewManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Provider/ProviderException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Animation/TimedViewAnimation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -444,7 +389,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/NewMatch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5F8F12B8-1C2A-4DE1-974A-9E2DF83E60F8/1d/dba96258/GameView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Animation/DrawCardAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Helper/RandomHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Utility/RandomHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Animation/IQueueableAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/TargetType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Attribute/MatchAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -453,28 +398,32 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D14008D-6F18-4689-9DCE-862DD2979D6E/c3/11d2995d/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Animation/ViewAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/View/HandView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CharacterDamaged.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5F8F12B8-1C2A-4DE1-974A-9E2DF83E60F8/dc/47e3b6f3/EditorApplicationLayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/424F6FA5-4461-4C4C-9450-D7A74BF62215/b4/19e42b42/AudioSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Provider/EntityProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/View/FieldView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Rarity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Provider/JsonProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Provider/DeckProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Deck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/Draw.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/HandDrawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/View/CardView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Provider/CardsProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/HandManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CharacterHealed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameStateManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Resource/PrefabHandlerException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Zone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchTurn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/EnemyTurn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/PlayerTurn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Encounter/Encounter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Resource/UiViewHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/Animation/AnimationManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/EnemyAction/EnemyMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/ActionInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -483,39 +432,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/AttributeManagerException.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/System/Entity/IdentityTypeException.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/DeckManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Character/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/System/Controller/ManagerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Action/EnemyAction/EnemyMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Action/Damage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Action/Heal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Card/Attribute/Attribute.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Character/Character.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Character/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Encounter/Encounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Provider/DeckProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Data/encounter.json" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Data/deck.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/System/Provider/JsonProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Provider/EnemyProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/System/Helper/ListHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/System/Helper/RandomHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Provider/EncounterProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Provider/CardsProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/HandManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/System/State/StateManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Event/EventData/StateChanged.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Event/EventData/TurnChanged.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManagerException.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchStart.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchTurn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/PlayerTurn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Action/Defend.cs" />
@@ -534,6 +460,29 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Action/Damage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Card/Attribute/Attribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entity/Action/EnemyAction/MoveInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/Animation/AnimationChannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/ViewManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/MatchViewManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/FieldView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/View/ViewHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/View/UiViewHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/HandManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/Resource/PrefabItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/Resource/IdentityTypeException.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/Resource/PrefabHandlerException.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/View/UiView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchViewManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/Resource/PrefabHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/View/IEntityView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/HandView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/Resource/PrefabReference.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/Resource/UiViewHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Match/View/CardView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/System/View/EntityView.cs" />
       </list>
     </option>
   </component>
@@ -558,6 +507,9 @@
     </navigator>
     <panes>
       <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -568,18 +520,59 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Resources" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Resources" type="1045f7f1:UnityExplorerNode" />
-              <item name="Data" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scenes" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+              <item name="Match" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Game" type="1045f7f1:UnityExplorerNode" />
+              <item name="Match" type="1045f7f1:UnityExplorerNode" />
+              <item name="Turn" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Model" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="System" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="System" type="1045f7f1:UnityExplorerNode" />
+              <item name="Resource" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="System" type="1045f7f1:UnityExplorerNode" />
+              <item name="View" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -590,15 +583,12 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Attri&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Entity/Card/Attribute/Attribute.cs&#10;CharacterDa&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Entity/Event/EventData/CharacterDamaged.cs&#10;H&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Game/Match/HandManager.cs&#10;EnemyTurn&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Game/Match/Turn/EnemyTurn.cs&#10;Provider&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Game/Provider&#10;MatchMana&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Match/MatchManager.cs&#10;GameMana&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Game/GameManager.cs" />
+    <property name="SearchEverywhereHistoryKey" value="HandView&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Game/Match/View/HandView.cs&#10;Attri&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Entity/Card/Attribute/Attribute.cs&#10;CharacterDa&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Entity/Event/EventData/CharacterDamaged.cs&#10;H&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Game/Match/HandManager.cs&#10;EnemyTurn&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Game/Match/Turn/EnemyTurn.cs&#10;Provider&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Game/Provider&#10;MatchMana&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Match/MatchManager.cs&#10;GameMana&#9;FILE&#9;file://D:/Files/Unity/Weave/Assets/Scripts/Game/GameManager.cs" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
@@ -615,9 +605,9 @@
     </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="69812">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="8364">
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="69812" />
+      <option name="pid" value="8364" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="53768">
@@ -696,7 +686,10 @@
       <workItem from="1567420020514" duration="15904000" />
       <workItem from="1568021200325" duration="1005000" />
       <workItem from="1568109488818" duration="8839000" />
-      <workItem from="1568341330597" duration="26129000" />
+      <workItem from="1568341330597" duration="26515000" />
+      <workItem from="1568501271247" duration="10296000" />
+      <workItem from="1569204746807" duration="23070000" />
+      <workItem from="1569359243674" duration="1020000" />
     </task>
     <task id="LOCAL-00001" summary="Testing">
       <created>1549703098197</created>
@@ -709,7 +702,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352483000" />
+    <option name="totallyTimeSpent" value="387255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -722,8 +715,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.20842217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.21481876" />
       <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.25746268" />
       <window_info id="Favorites" order="2" sideWeight="0.50161815" side_tool="true" weight="0.25746268" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -735,13 +729,13 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Unity" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Build" order="15" sideWeight="0.49946696" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Build" order="15" sideWeight="0.49946696" visible="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -801,395 +795,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Provider/EncounterProvider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <marker date="1568375717948" expanded="false" signature="6:51" ph="..." />
-            <marker date="1568375717948" expanded="true" signature="57:386" ph="{...}" />
-            <marker date="1568375717948" expanded="true" signature="259:384" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Provider/EnemyProvider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <marker date="1568367200840" expanded="true" signature="66:487" ph="{...}" />
-            <marker date="1568367200840" expanded="true" signature="203:485" ph="{...}" />
-            <marker date="1568367200840" expanded="true" signature="310:376" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Provider/CardsProvider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <marker date="1568369905285" expanded="false" signature="6:142" ph="..." />
-            <marker date="1568369905285" expanded="true" signature="144:195" ph="/// &#9;Manages Card data ... " />
-            <marker date="1568369905285" expanded="true" signature="192:592" ph="{...}" />
-            <marker date="1568369905285" expanded="true" signature="310:590" ph="{...}" />
-            <marker date="1568369905285" expanded="true" signature="444:503" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Provider/DeckProvider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <marker date="1568366756104" expanded="true" signature="47:183" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Game.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <marker date="1568366672968" expanded="false" signature="6:56" ph="..." />
-            <marker date="1568366672968" expanded="true" signature="92:338" ph="{...}" />
-            <marker date="1568366672968" expanded="true" signature="121:170" ph="{...}" />
-            <marker date="1568366672968" expanded="true" signature="203:250" ph="{...}" />
-            <marker date="1568366672968" expanded="true" signature="283:336" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-          <folding>
-            <marker date="1568358722904" expanded="true" signature="48:810" ph="{...}" />
-            <marker date="1568358722904" expanded="true" signature="141:335" ph="{...}" />
-            <marker date="1568358722904" expanded="true" signature="160:329" ph="{...}" />
-            <marker date="1568358722904" expanded="true" signature="423:480" ph="{...}" />
-            <marker date="1568358722904" expanded="true" signature="526:568" ph="{...}" />
-            <marker date="1568358722904" expanded="true" signature="602:640" ph="{...}" />
-            <marker date="1568358722904" expanded="true" signature="675:808" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Controller/ManagerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <marker date="1568341519783" expanded="true" signature="40:282" ph="{...}" />
-            <marker date="1568341519783" expanded="true" signature="71:121" ph="{...}" />
-            <marker date="1568341519783" expanded="true" signature="151:189" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <marker date="1568369890034" expanded="false" signature="6:32" ph="..." />
-            <marker date="1568369890034" expanded="true" signature="34:96" ph="///     Provides match attributes ... " />
-            <marker date="1568369890034" expanded="true" signature="64:749" ph="{...}" />
-            <marker date="1568369890034" expanded="true" signature="158:243" ph="{...}" />
-            <marker date="1568369890034" expanded="true" signature="288:444" ph="{...}" />
-            <marker date="1568369890034" expanded="true" signature="498:747" ph="{...}" />
-            <marker date="1568369890034" expanded="true" signature="536:741" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/PlayerManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding>
-            <marker date="1568375947022" expanded="true" signature="27:270" ph="{...}" />
-            <marker date="1568375947022" expanded="true" signature="223:268" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/HandManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-          <folding>
-            <marker date="1568369907987" expanded="false" signature="6:71" ph="..." />
-            <marker date="1568369907987" expanded="true" signature="73:142" ph="/// &#9;// TODO : Just rewrite all of these ... " />
-            <marker date="1568369907987" expanded="true" signature="98:3002" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="173:205" ph="{...}" />
-            <marker date="1568369907987" expanded="false" signature="211:658" ph="&quot;Get&quot;" />
-            <marker date="1568369907987" expanded="true" signature="279:400" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="815:1239" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="1143:1233" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="1272:1790" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="1629:1726" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="1854:2005" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="2058:2190" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="2239:2640" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="2320:2421" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="2671:2868" ph="{...}" />
-            <marker date="1568369907987" expanded="true" signature="2755:2862" ph="/* re: above...do we separate, shuffle, then recombine? ... */" />
-            <marker date="1568369907987" expanded="true" signature="2895:3000" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/State/StateManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-          <folding>
-            <marker date="1568369958971" expanded="false" signature="6:58" ph="..." />
-            <marker date="1568369958971" expanded="true" signature="60:108" ph="/// &#9;Handles States ... " />
-            <marker date="1568369958971" expanded="true" signature="95:914" ph="{...}" />
-            <marker date="1568369958971" expanded="true" signature="208:284" ph="{...}" />
-            <marker date="1568369958971" expanded="true" signature="323:561" ph="{...}" />
-            <marker date="1568369958971" expanded="true" signature="375:555" ph="{...}" />
-            <marker date="1568369958971" expanded="true" signature="618:912" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManagerException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding>
-            <marker date="1568370295826" expanded="true" signature="145:320" ph="{...}" />
-            <marker date="1568370295826" expanded="true" signature="237:318" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManagerException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-          <folding>
-            <marker date="1568118205882" expanded="true" signature="153:446" ph="{...}" />
-            <marker date="1568118205882" expanded="true" signature="270:322" ph="{...}" />
-            <marker date="1568118205882" expanded="true" signature="369:444" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/PlayerTurn.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <marker date="1568370693350" expanded="false" signature="6:78" ph="..." />
-            <marker date="1568370693350" expanded="true" signature="113:453" ph="{...}" />
-            <marker date="1568370693350" expanded="true" signature="189:232" ph="{...}" />
-            <marker date="1568370693350" expanded="true" signature="261:304" ph="{...}" />
-            <marker date="1568370693350" expanded="true" signature="330:451" ph="{...}" />
-            <marker date="1568370693350" expanded="true" signature="376:444" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchStart.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <marker date="1568370684092" expanded="false" signature="6:78" ph="..." />
-            <marker date="1568370684092" expanded="true" signature="113:758" ph="{...}" />
-            <marker date="1568370684092" expanded="true" signature="185:317" ph="{...}" />
-            <marker date="1568370684092" expanded="true" signature="346:386" ph="{...}" />
-            <marker date="1568370684092" expanded="true" signature="412:534" ph="{...}" />
-            <marker date="1568370684092" expanded="true" signature="458:527" ph="{...}" />
-            <marker date="1568370684092" expanded="true" signature="596:756" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <marker date="1568370587489" expanded="true" signature="46:729" ph="{...}" />
-            <marker date="1568370587489" expanded="true" signature="83:301" ph="{...}" />
-            <marker date="1568370587489" expanded="true" signature="121:257" ph="{...}" />
-            <marker date="1568370587489" expanded="true" signature="333:428" ph="{...}" />
-            <marker date="1568370587489" expanded="true" signature="468:727" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Character/Enemy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding>
-            <marker date="1568369966271" expanded="true" signature="51:98" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Resources/Data/deck.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Handler/EventHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <marker date="1568369935471" expanded="false" signature="6:102" ph="..." />
-            <marker date="1568369935471" expanded="true" signature="137:937" ph="{...}" />
-            <marker date="1568369935471" expanded="true" signature="325:518" ph="{...}" />
-            <marker date="1568369935471" expanded="true" signature="375:438" ph="{...}" />
-            <marker date="1568369935471" expanded="true" signature="451:512" ph="{...}" />
-            <marker date="1568369935471" expanded="true" signature="593:642" ph="{...}" />
-            <marker date="1568369935471" expanded="true" signature="715:935" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/TargetType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding>
-            <marker date="1568372807614" expanded="true" signature="23:57" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Card/Condition/Target.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="34" column="76" selection-start-line="34" selection-start-column="76" selection-end-line="34" selection-end-column="76" />
-          <folding>
-            <marker date="1568376048392" expanded="false" signature="6:106" ph="..." />
-            <marker date="1568376048392" expanded="true" signature="140:1784" ph="{...}" />
-            <marker date="1568376048392" expanded="true" signature="449:1042" ph="{...}" />
-            <marker date="1568376048392" expanded="true" signature="1115:1412" ph="{...}" />
-            <marker date="1568376048392" expanded="true" signature="1149:1406" ph="{...}" />
-            <marker date="1568376048392" expanded="true" signature="1491:1595" ph="{...}" />
-            <marker date="1568376048392" expanded="true" signature="1677:1782" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Animation/AnimationManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <marker date="1567324769919" expanded="false" signature="6:52" ph="..." />
-            <marker date="1567324769919" expanded="true" signature="84:494" ph="{...}" />
-            <marker date="1567324769919" expanded="true" signature="255:328" ph="{...}" />
-            <marker date="1567324769919" expanded="true" signature="429:492" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/EnemyTurn.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <marker date="1568375820697" expanded="true" signature="6:111" ph="..." />
-            <marker date="1568375820697" expanded="true" signature="145:1324" ph="{...}" />
-            <marker date="1568375820697" expanded="true" signature="311:938" ph="{...}" />
-            <marker date="1568375820697" expanded="true" signature="668:838" ph="{...}" />
-            <marker date="1568375820697" expanded="true" signature="967:1017" ph="{...}" />
-            <marker date="1568375820697" expanded="true" signature="1043:1165" ph="{...}" />
-            <marker date="1568375820697" expanded="true" signature="1089:1158" ph="{...}" />
-            <marker date="1568375820697" expanded="true" signature="1229:1322" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/EnemyAction/EnemyMove.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <marker date="1568375601713" expanded="true" signature="6:51" ph="..." />
-            <marker date="1568375601713" expanded="true" signature="76:984" ph="{...}" />
-            <marker date="1568375601713" expanded="true" signature="139:305" ph="/* TODO : Potentially handle random chance? 'Chance' condition, that rolls to determine validity. ... */" />
-            <marker date="1568375601713" expanded="true" signature="193:811" ph="{...}" />
-            <marker date="1568375601713" expanded="true" signature="704:787" ph="{...}" />
-            <marker date="1568375601713" expanded="true" signature="852:982" ph="{...}" />
-            <marker date="1568375601713" expanded="true" signature="889:979" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Character/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <marker date="1568374288805" expanded="true" signature="32:190" ph="{...}" />
-            <marker date="1568374288805" expanded="true" signature="58:188" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Entity/Entity.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <marker date="1567428186435" expanded="false" signature="6:67" ph="..." />
-            <marker date="1567428186435" expanded="true" signature="103:2038" ph="{...}" />
-            <marker date="1567428186435" expanded="true" signature="151:278" ph="{...}" />
-            <marker date="1567428186435" expanded="true" signature="169:272" ph="{...}" />
-            <marker date="1567428186435" expanded="true" signature="425:931" ph="{...}" />
-            <marker date="1567428186435" expanded="true" signature="461:925" ph="{...}" />
-            <marker date="1567428186435" expanded="true" signature="985:1327" ph="{...}" />
-            <marker date="1567428186435" expanded="true" signature="1427:1714" ph="{...}" />
-            <marker date="1567428186435" expanded="true" signature="1826:2036" ph="{...}" />
-            <marker date="1567428186435" expanded="true" signature="1894:2030" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/ActionInfo.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1568370046513" expanded="true" signature="24:143" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/Draw.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1568370001666" expanded="true" signature="39:200" ph="{...}" />
-            <marker date="1568370001666" expanded="true" signature="150:198" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/Defend.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding>
-            <marker date="1568371492367" expanded="true" signature="41:173" ph="{...}" />
-            <marker date="1568371492367" expanded="true" signature="148:171" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,10 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1568370030763" expanded="true" signature="39:244" ph="{...}" />
-            <marker date="1568370030763" expanded="true" signature="150:242" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1208,11 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <marker date="1568374379529" expanded="true" signature="35:416" ph="{...}" />
-            <marker date="1568374379529" expanded="true" signature="197:268" ph="{...}" />
-            <marker date="1568374379529" expanded="true" signature="307:414" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1220,31 +826,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="84" lean-forward="true" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
-          <folding>
-            <marker date="1568374418282" expanded="true" signature="55:412" ph="{...}" />
-            <marker date="1568374418282" expanded="true" signature="135:170" ph="{...}" />
-            <marker date="1568374418282" expanded="true" signature="209:410" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/NewMatch.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1568370029067" expanded="true" signature="34:151" ph="{...}" />
-            <marker date="1568370029067" expanded="true" signature="100:149" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/TurnChanged.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
-          <folding>
-            <marker date="1568370038813" expanded="true" signature="40:143" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1252,11 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
-          <folding>
-            <marker date="1568370041443" expanded="true" signature="38:410" ph="{...}" />
-            <marker date="1568370041443" expanded="true" signature="197:283" ph="{...}" />
-            <marker date="1568370041443" expanded="true" signature="322:408" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,30 +850,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <marker date="1568369848180" expanded="true" signature="22:217" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/EventData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1568370022388" expanded="true" signature="32:88" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Event/EventData/CharacterHealed.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <marker date="1568374418165" expanded="true" signature="41:350" ph="{...}" />
-            <marker date="1568374418165" expanded="true" signature="172:218" ph="{...}" />
-            <marker date="1568374418165" expanded="true" signature="254:348" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1295,44 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/CharacterManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="43" />
-          <folding>
-            <marker date="1568375676708" expanded="false" signature="6:133" ph="..." />
-            <marker date="1568375676708" expanded="true" signature="165:1611" ph="{...}" />
-            <marker date="1568375676708" expanded="false" signature="263:624" ph="Get" />
-            <marker date="1568375676708" expanded="true" signature="318:513" ph="{...}" />
-            <marker date="1568375676708" expanded="true" signature="656:950" ph="{...}" />
-            <marker date="1568375676708" expanded="true" signature="1029:1277" ph="{...}" />
-            <marker date="1568375676708" expanded="true" signature="1347:1609" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="38" />
-          <folding>
-            <marker date="1568368220171" expanded="false" signature="6:66" ph="..." />
-            <marker date="1568368220171" expanded="true" signature="117:2483" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="229:424" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="248:418" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="644:852" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="898:1038" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="1077:1202" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="1276:1464" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="1534:1715" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="1750:1891" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="1942:2087" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="2134:2289" ph="{...}" />
-            <marker date="1568368220171" expanded="true" signature="2329:2481" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1361,33 +895,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <marker date="1568370684193" expanded="false" signature="6:74" ph="..." />
-            <marker date="1568370684193" expanded="true" signature="108:1186" ph="{...}" />
-            <marker date="1568370684193" expanded="true" signature="141:186" ph="{...}" />
-            <marker date="1568370684193" expanded="true" signature="312:662" ph="{...}" />
-            <marker date="1568370684193" expanded="true" signature="363:566" ph="/* TODO : We will pick up the list of match events/animations etc. run them, then return to a character turn ... */" />
-            <marker date="1568370684193" expanded="true" signature="691:738" ph="{...}" />
-            <marker date="1568370684193" expanded="true" signature="764:1034" ph="{...}" />
-            <marker date="1568370684193" expanded="true" signature="796:1028" ph="{...}" />
-            <marker date="1568370684193" expanded="true" signature="1094:1184" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Controller/ControllerException.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Controller/ControllerException.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/EnemyAction/MoveInfo.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <marker date="1568375710617" expanded="true" signature="22:147" ph="{...}" />
-            <marker date="1568375710617" expanded="true" signature="188:387" ph="{...}" />
-            <marker date="1568375710617" expanded="true" signature="269:385" ph="{...}" />
-            <marker date="1568375710617" expanded="true" signature="299:381" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1402,10 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding>
-            <marker date="1568369867755" expanded="false" signature="6:32" ph="..." />
-            <marker date="1568369867755" expanded="true" signature="75:190" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1413,21 +924,286 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <marker date="1568369871627" expanded="false" signature="6:73" ph="..." />
-            <marker date="1568369871627" expanded="true" signature="102:697" ph="{...}" />
-            <marker date="1568369871627" expanded="true" signature="465:695" ph="{...}" />
-            <marker date="1568369871627" expanded="true" signature="609:689" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Action/Action.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Animation/AnimationChannel.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Encounter/Encounter.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Utility/UiHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Animation/SpriteAnimation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/View/FieldView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Entity/IdentityTypeException.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Coroutine/CoroutineHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Resource/PrefabHandlerException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8732DE5-BEEC-4A87-8F92-8152240B5DC1/14/bcebe82b/MonoBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchStateManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/State/StateManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/CharacterManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/Turn/MatchStart.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8732DE5-BEEC-4A87-8F92-8152240B5DC1/40/747ebdca/Object.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="226" column="20" selection-start-line="226" selection-start-column="20" selection-end-line="226" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Resource/PrefabReference.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/HandManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding>
-            <marker date="1568369877997" expanded="true" signature="44:108" ph="{...}" />
+            <marker date="1569209693989" expanded="false" signature="6:71" ph="..." />
+            <marker date="1569209693989" expanded="true" signature="98:2942" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="173:205" ph="{...}" />
+            <marker date="1569209693989" expanded="false" signature="211:658" ph="&quot;Get&quot;" />
+            <marker date="1569209693989" expanded="true" signature="279:400" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="708:1132" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="1036:1126" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="1165:1683" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="1522:1619" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="1747:1898" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="1951:2083" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="2132:2533" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="2213:2314" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="2564:2808" ph="{...}" />
+            <marker date="1569209693989" expanded="true" signature="2693:2802" ph="/* Order by mechanic takes into account location first, then index ... */" />
+            <marker date="1569209693989" expanded="true" signature="2835:2940" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Event/EventHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1568369935471" expanded="false" signature="6:102" ph="..." />
+            <marker date="1568369935471" expanded="true" signature="137:937" ph="{...}" />
+            <marker date="1568369935471" expanded="true" signature="325:518" ph="{...}" />
+            <marker date="1568369935471" expanded="true" signature="375:438" ph="{...}" />
+            <marker date="1568369935471" expanded="true" signature="451:512" ph="{...}" />
+            <marker date="1568369935471" expanded="true" signature="593:642" ph="{...}" />
+            <marker date="1568369935471" expanded="true" signature="715:935" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/MatchViewManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <marker date="1569321058411" expanded="true" signature="65:996" ph="{...}" />
+            <marker date="1569321058411" expanded="true" signature="192:378" ph="{...}" />
+            <marker date="1569321058411" expanded="true" signature="412:492" ph="{...}" />
+            <marker date="1569321058411" expanded="true" signature="525:604" ph="{...}" />
+            <marker date="1569321058411" expanded="true" signature="671:821" ph="{...}" />
+            <marker date="1569321058411" expanded="true" signature="895:994" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/View/CardView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <marker date="1569360264082" expanded="true" signature="6:40" ph="..." />
+            <marker date="1569360264082" expanded="true" signature="83:378" ph="{...}" />
+            <marker date="1569360264082" expanded="true" signature="266:376" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/View/EntityView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <marker date="1569360188258" expanded="true" signature="62:498" ph="{...}" />
+            <marker date="1569360188258" expanded="true" signature="174:258" ph="{...}" />
+            <marker date="1569360188258" expanded="true" signature="297:449" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/View/HandView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+          <folding>
+            <marker date="1569327367017" expanded="false" signature="6:71" ph="..." />
+            <marker date="1569327367017" expanded="true" signature="104:2184" ph="{...}" />
+            <marker date="1569327367017" expanded="true" signature="462:1586" ph="{...}" />
+            <marker date="1569327367017" expanded="true" signature="1286:1580" ph="{...}" />
+            <marker date="1569327367017" expanded="true" signature="1613:1799" ph="{...}" />
+            <marker date="1569327367017" expanded="true" signature="1835:1983" ph="{...}" />
+            <marker date="1569327367017" expanded="true" signature="2022:2182" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/View/UiView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <marker date="1569214994301" expanded="false" signature="6:151" ph="..." />
+            <marker date="1569214994301" expanded="true" signature="291:2068" ph="{...}" />
+            <marker date="1569214994301" expanded="true" signature="588:992" ph="{...}" />
+            <marker date="1569214994301" expanded="true" signature="808:989" ph="/* TODO : Add rotation ... */" />
+            <marker date="1569214994301" expanded="true" signature="1164:1276" ph="{...}" />
+            <marker date="1569214994301" expanded="true" signature="1372:1451" ph="{...}" />
+            <marker date="1569214994301" expanded="true" signature="1541:1636" ph="{...}" />
+            <marker date="1569214994301" expanded="true" signature="1729:1829" ph="{...}" />
+            <marker date="1569214994301" expanded="true" signature="1925:2023" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/View/UiViewHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+          <folding>
+            <marker date="1568892010202" expanded="false" signature="6:50" ph="..." />
+            <marker date="1568892010202" expanded="true" signature="85:535" ph="{...}" />
+            <marker date="1568892010202" expanded="true" signature="276:302" ph="{...}" />
+            <marker date="1568892010202" expanded="true" signature="356:380" ph="{...}" />
+            <marker date="1568892010202" expanded="true" signature="459:533" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Game/Match/AttributeManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <marker date="1568369890034" expanded="false" signature="6:32" ph="..." />
+            <marker date="1568369890034" expanded="true" signature="64:749" ph="{...}" />
+            <marker date="1568369890034" expanded="true" signature="158:243" ph="{...}" />
+            <marker date="1568369890034" expanded="true" signature="288:444" ph="{...}" />
+            <marker date="1568369890034" expanded="true" signature="498:747" ph="{...}" />
+            <marker date="1568369890034" expanded="true" signature="536:741" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/System/Resource/UiViewHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding>
+            <marker date="1569359521927" expanded="false" signature="6:73" ph="..." />
+            <marker date="1569359521927" expanded="true" signature="118:1939" ph="{...}" />
+            <marker date="1569359521927" expanded="false" signature="125:291" ph="Class" />
+            <marker date="1569359521927" expanded="true" signature="197:271" ph="{...}" />
+            <marker date="1569359521927" expanded="true" signature="499:683" ph="{...}" />
+            <marker date="1569359521927" expanded="true" signature="567:625" ph="{...}" />
+            <marker date="1569359521927" expanded="true" signature="778:1395" ph="{...}" />
+            <marker date="1569359521927" expanded="true" signature="1557:1937" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -10,7 +10,7 @@ public class Card : Entity {
     public Zone Zone { get; set; }
     public Rarity Rarity { get; set; }
 
-    public void StartListening() // TODO : Make this process more robust. Perhaps differentiate Card Transport from Model, create the Model at match start
+    public void StartListening()
     {
         foreach (var modifier in Actions
             .OfType<IAttribute>()

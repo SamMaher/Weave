@@ -3,7 +3,7 @@
     public EventName EventName { get; set; }
     public int IncrementedValue { get; set; }
 
-    public void StartListening() // TODO : Seems clunky - perhaps put this in constructors called when the match starts?
+    public void StartListening()
     {
         EventHandler.StartListening(EventName, IncrementValue);
     }
