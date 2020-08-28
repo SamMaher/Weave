@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerTurn : IState { 
-
+﻿public class PlayerTurn : IState, IMatchState
+{
     public bool EndPlayerTurn { get; set; }
     
     public void Enter()

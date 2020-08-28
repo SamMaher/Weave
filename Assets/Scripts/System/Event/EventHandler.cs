@@ -20,12 +20,15 @@ public static class EventHandler {
 
     public static void StopListening(EventName eventName, Handler sender)
     {
-        Events[eventName] -= sender;
+        if (Events.ContainsKey(eventName))
+        {
+            Events[eventName] -= sender;
+        }
     }
 
     public static void Notify(EventName eventName, EventData eventData)
     {
-        Debug.Log($"EVENT: {eventName} - {eventData}"); // TODO : Build a logging system that stores event info
+        Debug.Log($"EVENT: {eventName} - {eventData}");
         if (!Events.ContainsKey(eventName)) return;
         Events[eventName](null, eventData);
     }

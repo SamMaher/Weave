@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class MatchController : ManagerController {
     
     private static MatchController _controller { get; set; }
@@ -15,7 +11,7 @@ public class MatchController : ManagerController {
         }
     }
 
-    public AttributeManager AttributeManager;
+    public PlayerControlStateManager PlayerControlStateManager;
     public MatchStateManager MatchStateManager;
     public HandManager HandManager;
     public CharacterManager CharacterManager;
@@ -23,16 +19,15 @@ public class MatchController : ManagerController {
 
     protected override void AddManagers()
     {
-        AttributeManager = new AttributeManager();
         CharacterManager = new CharacterManager();
         MatchStateManager = new MatchStateManager();
+        PlayerControlStateManager = new PlayerControlStateManager();
         HandManager = new HandManager();
         MatchViewManager = new MatchViewManager();
     }
 
     protected override void RemoveManagers()
     {
-        AttributeManager = null;
         MatchStateManager = null;
         HandManager = null;
         CharacterManager = null;
@@ -61,6 +56,13 @@ public class MatchController : ManagerController {
         EventHandler.Notify(EventName.CharacterHealed, characterHealed);
     }
 
+    public static void PlayCard(Card card)
+    {
+//        var cardMoved = Controller.Match.PlayCard(card, Zone.Discard);
+//
+//        EventHandler.Notify(EventName.CardDiscarded, cardMoved);
+    }
+
     public static void DrawHand()
     {
         var handDrawn = Controller.HandManager.DrawHand();
@@ -77,7 +79,7 @@ public class MatchController : ManagerController {
 
     public static void DiscardCard(Card card)
     {
-        var cardMoved = Controller.HandManager.MoveCard(card, Zone.Discard);
+        var cardMoved = Controller.HandManager.MoveCard(card, CardZone.Discard);
 
         EventHandler.Notify(EventName.CardDiscarded, cardMoved);
     }

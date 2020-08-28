@@ -13,19 +13,23 @@ public class HandManager {
 
     #region "Get"
 
-    public List<Card> GetCards(Zone zone = Zone.None)
+    public Card[] GetAllCards()
     {
-        if (zone == Zone.None) return Cards;
-        return Cards.Where(card => card.Zone == zone).ToList();
+        return Cards.ToArray();
     }
 
-    public List<Card> GetDeck() => GetCards(Zone.Deck);
+    public Card[] GetCards(CardZone zone)
+    {
+        return Cards.Where(card => card.Zone == zone).ToArray();
+    }
 
-    public List<Card> GetHand() => GetCards(Zone.Hand);
+    public Card[] GetDeck() => GetCards(CardZone.Deck);
 
-    public List<Card> GetDiscard() => GetCards(Zone.Discard);
+    public Card[] GetHand() => GetCards(CardZone.Hand);
 
-    public List<Card> GetExhausted() => GetCards(Zone.Exhaust);
+    public Card[] GetDiscard() => GetCards(CardZone.Discard);
+
+    public Card[] GetExhausted() => GetCards(CardZone.Exhaust);
 
     #endregion
 
@@ -39,7 +43,7 @@ public class HandManager {
         
         foreach (var card in Cards)
         {
-            card.Zone = Zone.Deck;
+            card.Zone = CardZone.Deck;
             card.StartListening();
         }
     }
@@ -49,7 +53,7 @@ public class HandManager {
         var baseHandSize = GameController.Controller.PlayerManager.BaseHandSize;
         
         var oldHand = GetHand();
-        foreach (var card in oldHand) MoveCard(card, Zone.Discard);
+        foreach (var card in oldHand) MoveCard(card, CardZone.Discard);
 
         var cardsToDraw = Mathf.Min(Cards.Count, baseHandSize);
         
@@ -63,15 +67,15 @@ public class HandManager {
         return new HandDrawn(newHand.ToArray());
     }
 
-    public CardMoved AddCard(Card card, Zone zone = Zone.None)
+    public CardMoved AddCard(Card card, CardZone zone = CardZone.Deck)
     {
-        card.Zone = (zone == Zone.None) ? Zone.Deck : zone;
+        card.Zone = (zone == CardZone.Deck) ? CardZone.Deck : zone;
         Cards.Add(card);
 
-        return new CardMoved(card, Zone.None, zone);
+        return new CardMoved(card, CardZone.Deck, zone);
     }
 
-    public CardMoved MoveCard(Card card, Zone zone)
+    public CardMoved MoveCard(Card card, CardZone zone)
     {
         var from = card.Zone;
         var to = card.Zone = zone;
@@ -81,18 +85,21 @@ public class HandManager {
 
     public CardMoved DrawCard(Card card = null)
     {
-        var zone = card?.Zone ?? Zone.Deck;
-        if (zone == Zone.Deck)
+        var zone = card?.Zone ?? CardZone.Deck;
+        if (zone == CardZone.Deck)
         {
-            if (GetDeck().Count < 1) Recycle();
+            if (GetDeck().Length < 1 && GetDiscard().Length > 0) {
+                Recycle();
+            }
+
             card = GetDeck()[0];
         }
         
         var maxHandSize = GameController.Controller.PlayerManager.MaxHandSize;
 
-        if (GetHand().Count >= maxHandSize) return MoveCard(card, Zone.Discard);
+        if (GetHand().Length >= maxHandSize) return MoveCard(card, CardZone.Discard);
 
-        return MoveCard(card, Zone.Hand);
+        return MoveCard(card, CardZone.Hand);
     }
 
     public void ShuffleDeck()
@@ -104,7 +111,7 @@ public class HandManager {
 
     public void Recycle()
     {
-        foreach (var card in GetDiscard()) MoveCard(card, Zone.Deck);
+        foreach (var card in GetDiscard()) MoveCard(card, CardZone.Deck);
         ShuffleDeck();
     }
 }

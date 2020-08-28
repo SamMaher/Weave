@@ -1,37 +1,63 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.Remoting.Messaging;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public abstract class UiView : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IDragHandler, IBeginDragHandler, IEndDragHandler {
-	
-	public bool IsInteractive { get; set; } // TODO : Make these relevant
-	public bool IsControllable { get; set; } // TODO : Make these relevant
+public abstract class UiView : MonoBehaviour, 
+    IPointerEnterHandler, IPointerExitHandler, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerUpHandler, IPointerDownHandler, IPointerClickHandler {
 
-	public float MoveSpeed;
-	public Vector3 TargetPosition;
-	public float RotationSpeed;
-	public Vector3 TargetRotation;
+    private float PositionMoveSpeed { get; set; }
+	private Vector2 TargetPosition { get; set; }
+    public UiViewLayer UiViewLayer = UiViewLayer.Midground;
+    public UiViewLayerOrder UiViewLayerOrder = UiViewLayerOrder.Middle;
 	
-	public virtual void Update()
+	// Magic
+    private const int InstantMoveSpeedValue = 0;
+
+	public virtual void Awake()
+    {
+        PositionMoveSpeed = InstantMoveSpeedValue;
+    }
+	
+	public void Update()
 	{
-		var deltaTime = Time.deltaTime; // TODO : Animation timer helper?
-		
-		var deltaMoveSpeed = MoveSpeed * deltaTime;
-		transform.position = Vector3.MoveTowards(transform.position, TargetPosition, deltaMoveSpeed);
+        OnEveryFrame();
+        UpdatePosition();
+    }
 
-		// TODO : Add rotation
-//		var deltaRotateSpeed = RotationSpeed * deltaTime;
-//		transform.rotation = Vector3.RotateTowards(transform.forward, TargetRotation, deltaRotateSpeed, 0f);
-	}
+    public virtual void OnEveryFrame() {}
 
-	public bool IsLeftClick(PointerEventData eventData) => (eventData.button == PointerEventData.InputButton.Left);
+    public virtual void UpdateView() {}
+
+    private void UpdatePosition()
+    {
+        if (TargetPosition == null) return;
+
+        float zLock = this.UiViewLayer.GetUiViewLayerZPosition();
+        var zLockedTargetPosition = new Vector3(TargetPosition.x, TargetPosition.y, zLock);
+
+        if (PositionMoveSpeed == InstantMoveSpeedValue)
+        {
+            transform.position = zLockedTargetPosition;
+        }
+        else
+        {
+            var deltaTimedMoveSpeed = UiViewHelper.GetDeltaTimedSpeed(PositionMoveSpeed);
+            transform.position = Vector3.MoveTowards(transform.localPosition, zLockedTargetPosition, deltaTimedMoveSpeed);
+        }
+    }
+
+    public void SetTargetPosition(Vector2 targetPosition, float targetSpeed = InstantMoveSpeedValue)
+    {
+        this.TargetPosition = targetPosition;
+        this.PositionMoveSpeed = targetSpeed;
+    }
+
+    public void SetUiViewLayer(UiViewLayer uiViewLayer)
+    {
+        this.UiViewLayer = uiViewLayer;
+    }
 	
 	public void OnPointerEnter(PointerEventData eventData)
 	{
-		if (UiViewHelper.Current == null) this.SetCurrent();
-		if (!this.IsCurrent()) return;
 		PointerEnter();
 	}
 
@@ -39,8 +65,6 @@ public abstract class UiView : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
 	public void OnPointerExit(PointerEventData eventData)
 	{
-		if (!this.IsCurrent()) return;
-		this.UnsetCurrent();
 		PointerExit();
 	}
 	
@@ -48,8 +72,7 @@ public abstract class UiView : MonoBehaviour, IPointerEnterHandler, IPointerExit
 	
 	public void OnDrag(PointerEventData eventData)
 	{
-		if (!this.IsCurrent()) return;
-		if (!IsLeftClick(eventData)) return;
+		if (!eventData.IsLeftClick()) return;
 		PointerDrag();
 	}
 
@@ -57,8 +80,7 @@ public abstract class UiView : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
 	public void OnBeginDrag(PointerEventData eventData)
 	{
-		if (!this.IsCurrent()) return;
-		if (!IsLeftClick(eventData)) return;
+		if (!eventData.IsLeftClick()) return;
 		PointerBeginDrag();
 	}
 
@@ -66,10 +88,30 @@ public abstract class UiView : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
 	public void OnEndDrag(PointerEventData eventData)
 	{
-		if (!this.IsCurrent()) return;
-		if (!IsLeftClick(eventData)) return;
+		if (!eventData.IsLeftClick()) return;
 		PointerEndDrag();
 	}
 	
 	public virtual void PointerEndDrag() {}
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        PointerUp();
+    }
+
+    public virtual void PointerUp() { }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        PointerDown();
+    }
+
+    public virtual void PointerDown() { }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        PointerClick();
+    }
+
+    public virtual void PointerClick() { }
 }

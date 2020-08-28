@@ -1,10 +1,10 @@
 ﻿public class CardMoved : EventData {
     
     public Card Card { get; set; }
-    public Zone From { get; set; }
-    public Zone To { get; set; }
+    public CardZone From { get; set; }
+    public CardZone To { get; set; }
 
-    public CardMoved(Card card, Zone from, Zone to)
+    public CardMoved(Card card, CardZone from, CardZone to)
     {
         Card = card;
         From = from;

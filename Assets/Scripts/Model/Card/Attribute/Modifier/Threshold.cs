@@ -6,7 +6,7 @@
     
     public override int CalculateModifier(int value)
     {
-        var attributeValue = MatchController.Controller.AttributeManager.Value(AttributeName);
+        var attributeValue = AttributeHandler.Value(AttributeName);
         if ((Above == null || attributeValue > Above) 
             && (Below == null || attributeValue < Below))
         {

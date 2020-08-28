@@ -1,5 +1,4 @@
-﻿public enum Zone {
-    None,
+﻿public enum CardZone {
     Deck,
     Hand,
     Discard,

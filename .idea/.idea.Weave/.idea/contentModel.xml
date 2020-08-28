@@ -16,7 +16,7 @@
                 <e p="AttackAnimation.cs" t="Include" />
                 <e p="DrawCardAnimation.cs" t="Include" />
               </e>
-              <e p="AttributeManager.cs" t="Include" />
+              <e p="AttributeHandler.cs" t="Include" />
               <e p="AttributeManagerException.cs" t="Include" />
               <e p="CharacterManager.cs" t="Include" />
               <e p="HandManager.cs" t="Include" />
@@ -32,6 +32,7 @@
               </e>
               <e p="View" t="Include">
                 <e p="CardView.cs" t="Include" />
+                <e p="DeckView.cs" t="Include" />
                 <e p="FieldView.cs" t="Include" />
                 <e p="HandView.cs" t="Include" />
               </e>

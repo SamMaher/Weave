@@ -21,13 +21,13 @@ public class EnemyMove {
 			: null;
 		
 		var targetCondition = Conditions.OfType<Target>().SingleOrDefault();
-		var moveIsValid = targetCondition == null || chosenTarget != null;
+		var isMoveValid = targetCondition == null || chosenTarget != null;
 
 		var moveInfo = new MoveInfo
 		{
-			Valid = moveIsValid,
+			Valid = isMoveValid,
 			Source = sourceCharacter,
-			Target = chosenTarget
+			Target = chosenTarget,
 		};
 
 		return moveInfo;

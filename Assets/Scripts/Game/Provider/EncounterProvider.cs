@@ -1,4 +1,4 @@
-public class EncounterProvider : JsonProvider<Encounter> {
+public class EncounterProvider : JsonEntityProvider<Encounter> {
 
     protected override string GetJsonDataFileName() => "encounter";
 

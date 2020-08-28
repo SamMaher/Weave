@@ -1,4 +1,4 @@
-public class DeckProvider : JsonProvider<Deck> {
+public class DeckProvider : JsonEntityProvider<Deck> {
 
     protected override string GetJsonDataFileName() => "deck";
 

@@ -1,6 +1,6 @@
-using Boo.Lang;
+using System.Collections.Generic;
 
-public class EnemyProvider : JsonProvider<Enemy> {
+public class EnemyProvider : JsonEntityProvider<Enemy> {
 
     protected override string GetJsonDataFileName() => "enemy";
     

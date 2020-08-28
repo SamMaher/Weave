@@ -1,13 +1,11 @@
-﻿using System;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
+﻿using System.Linq;
 
 public class Card : Entity {
     
     public string Text { get; set; }
     public Condition[] Conditions { get; set; }
     public Action[] Actions { get; set; }
-    public Zone Zone { get; set; }
+    public CardZone Zone { get; set; }
     public Rarity Rarity { get; set; }
 
     public void StartListening()

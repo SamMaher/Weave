@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using UnityEngine;
 
 public abstract class StateManager {
     
@@ -18,16 +17,21 @@ public abstract class StateManager {
         while (true)
         {
             while (Current.IsRunning()) yield return null;
-            var eventData = Next();
+            var eventData = Exit();
             EventHandler.Notify(EventName.TurnEnded, eventData);
         }
     }
 
-    protected StateChanged Next(IState newState = null)
+    protected StateChanged Exit()
+    {
+        var exitState = Current.Exit();
+        return Next(exitState);
+    }
+
+    protected StateChanged Next(IState newState)
     {
         var fromStateName = Current.GetType().ToString();
-        var exitState = Current.Exit();
-        Current = newState ?? exitState;
+        Current = newState;
         var toStateName = Current.GetType().ToString();
         Current.Enter();
 

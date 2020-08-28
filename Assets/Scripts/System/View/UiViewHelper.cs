@@ -1,24 +1,29 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 public static class UiViewHelper {
-
-	public static UiView Current { get; set; }
-
-	public static bool IsCurrent(this UiView uiView) => (uiView != null && uiView == Current);
-
-	public static void SetCurrent(this UiView uiView)
-	{
-		Current = uiView;
-	}
-
-	public static void UnsetCurrent(this UiView uiView)
-	{
-		Current = null;
-	}
 
 	public static Vector3 ScreenPosition(this PointerEventData pointerEventData)
 	{
 		return Camera.main.ScreenToWorldPoint(pointerEventData.position);
 	}
+
+    public static bool IsLeftClick(this PointerEventData pointerEventData)
+    {
+        return pointerEventData.button == PointerEventData.InputButton.Left;
+    }
+
+    public static Vector2 GetMousePositionWorldPoint()
+    {
+        Vector2 mousePosition = Input.mousePosition;
+        return Camera.main.ScreenToWorldPoint(mousePosition);
+    }
+
+    public static float GetDeltaTimedSpeed(float baseSpeed)
+    {
+        const int uiSpeedMultiplier = 10;
+        var deltaTime = Time.deltaTime;
+        return (baseSpeed * uiSpeedMultiplier) * deltaTime;
+    }
 }

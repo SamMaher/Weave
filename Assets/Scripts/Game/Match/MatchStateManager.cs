@@ -22,7 +22,7 @@
     {
         if (!IsPlayerTurn()) throw new NotPlayerTurnException();
             
-        var stateChanged = Next();
+        var stateChanged = Exit();
         var turnChanged = new TurnChanged(stateChanged.FromStateName, stateChanged.ToStateName);
         
         return turnChanged;

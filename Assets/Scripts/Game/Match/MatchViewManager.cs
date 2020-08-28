@@ -7,8 +7,8 @@ public class MatchViewManager {
 
     public MatchViewManager()
     {
-        FieldView = UiViewHandler.Handler.Instantiate<FieldView>("Field");
-        HandView = UiViewHandler.Handler.Instantiate<HandView>("Hand");
+        FieldView = UiViewHandler.Handler.InstantiateUiView<FieldView>("Field");
+        HandView = UiViewHandler.Handler.InstantiateUiView<HandView>("Hand");
 
         StartListening();
     }
@@ -27,8 +27,21 @@ public class MatchViewManager {
     {
         var cardMoved = eventData as CardMoved;
         if (cardMoved == null) return;
-        
-        HandView.AddCard(cardMoved.Card);
+
+        var card = cardMoved.Card;
+        switch (card.Zone)
+        {
+            case CardZone.Hand:
+                DrawCardToHand(card);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void DrawCardToHand(Card card)
+    {
+        HandView.AddCard(card);
     }
     
     public void MarkCharactersTargetable(List<Character> characters)

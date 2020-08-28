@@ -34,7 +34,7 @@ public class Entity : IComparable {
     public int CompareTo(object objectToCompare)
     {
         var entityToCompare = objectToCompare as Entity;
-        if (entityToCompare == null) return -1;
+        if (entityToCompare == null) return 1;
 
         var identity = ToIdentity();
         var toCompareIdentity = entityToCompare.ToIdentity();
@@ -58,10 +58,10 @@ public class Entity : IComparable {
     {
         int IComparer.Compare(object entityA, object entityB)
         {
-            var A = entityA as Entity;
-            var B = entityB as Entity;
+            var a = entityA as Entity;
+            if (a == null) return 1;
 
-            return (A.CompareTo(B));
+            return (a.CompareTo(entityB));
         }
     }
 }

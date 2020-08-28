@@ -13,7 +13,7 @@ public static class MoveInfoExtensions {
 		{
 			Action = action,
 			Source = moveInfo.Source,
-			Target = moveInfo.Target
+			Target = moveInfo.Target,
 		};
 	}
 }

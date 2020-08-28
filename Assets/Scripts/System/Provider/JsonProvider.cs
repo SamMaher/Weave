@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public abstract class JsonProvider<T>: EntityProvider<T> where T : Entity {
+public abstract class JsonEntityProvider<T>: EntityProvider<T> where T : Entity {
 
     private static JsonFactory<T> JsonFactory;
     private static Dictionary<string, T> Store { get; set; }
 
-    protected JsonProvider()
+    protected JsonEntityProvider()
     {
         // If store is not null, we don't have to instantiate the context
         if (Store != null) return;

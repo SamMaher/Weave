@@ -1,0 +1,1 @@
+﻿public interface IMatchState : IState {}

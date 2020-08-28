@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
-public class EnemyTurn : IState {
+public class EnemyTurn : IState, IMatchState {
     
     public bool EnemyActionsComplete { get; set; }
     public Player Player { get; set; }
@@ -23,7 +21,7 @@ public class EnemyTurn : IState {
         {
             var moveInfo = move.GetMoveInfo(enemy);
             if (!moveInfo.Valid) continue;
-            move.Invoke(moveInfo); 
+            move.Invoke(moveInfo);
             break;
         }
         

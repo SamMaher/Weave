@@ -1,9 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MatchStart : IState {
-    
+public class MatchStart : IState, IMatchState
+{
     public bool MatchReady { get; set; }
 
     public void Enter()

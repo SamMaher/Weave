@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections;
-using Boo.Lang;
 using UnityEngine;
 
-public class MatchTurn : IState {
-
+public class MatchTurn : IState, IMatchState
+{
     public enum NextMatchTurn {
         PlayerTurn,
         EnemyTurn

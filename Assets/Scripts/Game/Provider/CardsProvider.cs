@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.Experimental.AI;
 
-public class CardsProvider : JsonProvider<Card> {
+public class CardsProvider : JsonEntityProvider<Card> {
     
     protected override string GetJsonDataFileName() => "card";
 
