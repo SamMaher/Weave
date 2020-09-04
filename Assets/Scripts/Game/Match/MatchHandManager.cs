@@ -2,11 +2,11 @@
 using System.Linq;
 using UnityEngine;
 
-public class HandManager {
+public class MatchHandManager {
     
     private List<Card> Cards { get; set; }
 
-    public HandManager()
+    public MatchHandManager()
     {
         OpenDeck();
     }

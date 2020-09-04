@@ -22,8 +22,7 @@ public static class UiViewHelper {
 
     public static float GetDeltaTimedSpeed(float baseSpeed)
     {
-        const int uiSpeedMultiplier = 10;
         var deltaTime = Time.deltaTime;
-        return (baseSpeed * uiSpeedMultiplier) * deltaTime;
+        return baseSpeed * deltaTime;
     }
 }

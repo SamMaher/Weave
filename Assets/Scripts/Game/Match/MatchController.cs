@@ -13,16 +13,16 @@ public class MatchController : ManagerController {
 
     public PlayerControlStateManager PlayerControlStateManager;
     public MatchStateManager MatchStateManager;
-    public HandManager HandManager;
-    public CharacterManager CharacterManager;
+    public MatchHandManager HandManager;
+    public MatchCharacterManager CharacterManager;
     public MatchViewManager MatchViewManager;
 
     protected override void AddManagers()
     {
-        CharacterManager = new CharacterManager();
+        CharacterManager = new MatchCharacterManager();
         MatchStateManager = new MatchStateManager();
         PlayerControlStateManager = new PlayerControlStateManager();
-        HandManager = new HandManager();
+        HandManager = new MatchHandManager();
         MatchViewManager = new MatchViewManager();
     }
 

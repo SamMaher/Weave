@@ -48,4 +48,9 @@ public class MatchViewManager {
     {
         // TODO : Highlights given characters and lets them be targeted by the pointer
     }
+
+    public void PositionCardsInHand()
+    {
+        HandView.PositionCardsInHand();
+    }
 }

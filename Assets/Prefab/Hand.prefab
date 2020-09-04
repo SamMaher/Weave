@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4813181912562982}
-  - component: {fileID: 114126073600370822}
+  - component: {fileID: 5785051844462556764}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114126073600370822
+--- !u!114 &5785051844462556764
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,14 +41,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1808814665964420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b056b75b8cbe4946b2a7f2c9521efb3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bcbc446899fbe34b8e71772e4fea10e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 0
-  TargetPosition: {x: 0, y: 0}
+  UiViewLayer: 2
+  UiViewLayerOrder: 0
   DeckView: {fileID: 114043257569922876}
-  HandViewWidth: 800
-  CardViewWidth: 500
+  HandViewWidth: 0
+  CardViewWidth: 0
 --- !u!1 &1941248304348174
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,11 +95,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1941248304348174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca6b7ce730174ff584d9380f1ca1e292, type: 3}
+  m_Script: {fileID: 11500000, guid: e6a2e42788e26d24c807d4d196a7e422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 2
-  TargetPosition: {x: 0, y: 0}
+  UiViewLayer: 2
+  UiViewLayerOrder: 0
 --- !u!212 &212011529631341782
 SpriteRenderer:
   m_ObjectHideFlags: 0

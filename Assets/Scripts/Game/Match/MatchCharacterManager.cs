@@ -1,11 +1,8 @@
 ﻿using System;
-using System.CodeDom;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
-public class CharacterManager {
+public class MatchCharacterManager {
 
     private Player Player { get; set; }
     private List<Enemy> Enemies { get; set; }
